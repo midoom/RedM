@@ -1,0 +1,159 @@
+<html>
+
+	<head>
+      <link rel="stylesheet" href="reset.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   </head>
+
+	<body>
+
+      <style>
+         @keyframes fade {
+            from {opacity: 0;}
+               to {opacity: 1;}
+         }
+
+         html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            overflow: hidden;
+         }
+
+         .eclipse-base {
+            margin-top: 125%;
+            background-color: rgba(255, 255, 255, 0.75);
+            background-clip: padding-box;
+            border-radius: 7px;
+            width: 300px;
+            height: auto;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+         }
+
+         .eclipse-base a {
+            display: flex;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-size: 25px;
+            margin-bottom: 5px;
+         }
+
+         .eclipse-base p {
+            display: flex;
+            justify-content: center;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, .1);
+            background-color: rgba(50, 50, 50);
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+         }
+
+         .eclipse-base button {
+            border: none;
+            border-radius: 7px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            background-color: rgba(255, 0, 0, .75);
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+         }
+
+         .eclipse-base button:hover {
+            background-color: rgba(255, 0, 0, .55);
+         }
+
+         .eclipse-base button:focus {
+            outline: none;
+         }
+
+         .y {
+            top: 43.65%;
+            left: 56.3%;
+            position: absolute;
+            color: rgb(35, 35, 35);
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+         }
+
+         .y:hover {
+            color: rgb(155, 155, 155);
+         }
+
+         .y1 {
+            top: 48.95%;
+            left: 56.3%;
+            position: absolute;
+            color: rgb(35, 35, 35);
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+         }
+
+         .y1:hover {
+            color: rgb(155, 155, 155);
+         }
+
+         .y2 {
+            top: 54.5%;
+            left: 56.3%;
+            position: absolute;
+            color: rgb(35, 35, 35);
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+         }
+
+         .y2:hover {
+            color: rgb(155, 155, 155);
+         }
+
+         textarea {
+            position: absolute;
+            left: -100%;
+         }
+      </style>
+
+      <div id="eclipse" class="eclipse-base">
+         <a>Coordinates</a>
+         <div>
+            <p id="eclipseCoords">x = 330.25, y = 225.12, z = 15.3</p>
+            <i class="y fas fa-copy" onclick="eclipseCopy()"></i>
+         </div>
+         <div>
+            <p id="eclipsenormalCoords">330.25, 225.12, 15.3</p>
+            <i class="y1 fas fa-copy" onclick="eclipsenormalCopy()"></i>
+         </div>
+         <div>
+            <p id="eclipsevector3Coords">vector3(330.25, 225.12, 15.3)</p>
+            <i class="y2 fas fa-copy" onclick="eclipsevector3Copy()"></i>
+         </div>
+
+         <div>
+            <p id="eclipsecoordsHeading">vector3(330.25, 225.12, 15.3)</p>
+            <i class="y2 fas fa-copy" onclick="eclipsevector3Copy()"></i>
+         </div>
+         <button onclick="eclipseClose()">Close</button>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="index.js" type="text/javascript"></script>
+   </body>
+</html>

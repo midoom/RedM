@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="container-landing" style="display: none;">
+            <h3 id="landingtitle">Numéro de compte</h3>
+            <ul id="list3"></ul>
+            <!-- <button id="newmail" type="button">No New Mail</button> -->
+            <button id="sendmsg2" type="button">Envoyer une lettre</button>
+            <button id="checkmail" type="button">Lire un courrier</button>
+            <button id="adressbook1" type="button">Carnet d'adresses</button>
+            <button id="close" type="button">Fermer</button>
+        </div>
+        <div id="container-viewedmsg" style="display: none;">
+            <ul id="list2"></ul>
+            <button class='submit' onclick='goback()' type='button'>Retour</button>
+            <button id='submit6' onclick='deletemsg()' type='button'>Effacer</button>
+            <!-- <h3 style="margin-left: 40%;">Paste viewedmsg ID:</h3>      <input type="text" id="viewedmsg"/> -->
+        </div>
+        <div id="container-sendmsg" style="display: none;">
+            <h3 id="playerid">Destinataire:</h3>
+            <select id="dropbtn" onChange="showHide()">
+                </select>
+            <h3 id="body">Contenu :</h3>
+            <textarea id="box3" name="sendmsg" rows="14" cols="10" wrap="soft"> </textarea>
+            <button id="submit4" type="button">Retour</button>
+            <button id="submit3" type="button">Envoi</button>
+        </div>
+        <div id="container-adressbook" style="display: none;">
+            <h3 id="adressbook2">Nouvelles adresses:</h3>
+            <select id="dropbtn2" onChange="showHide()">
+                </select>
+            <h3 id="adressbook3">Noms :</h3>
+            <input type="text" id="name" />
+            <h3 id="adressbook4">Numéro de compte:</h3>
+            <input type="text" id="adress" />
+            <button id="saveinfo" type="button">Enregistrer</button>
+            <button id="submit5" type="button">Retour</button>
+            <button id="deleteadress" type="button">Supprimer l'adresse</button>
+        </div>
+        <div id="container-inbox" style="display: none;">
+            <h3 id="letters">Relire des lettres:</h3>
+            <div class="grid-container">
+            </div>
+            <button id="submit2" type="button">Retour</button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- style="background-color: blue;margin-left: 35%;margin-top: 1%;" -->
+
+<!-- <button class="menu-selectb active" type="button"
+        style="
+        margin-left: 
+        35%;margin-top: 1%;
+        "
+        onclick="alert('Hi user!')"
+        >I am a blue button! Click me!</button> -->

@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body, html {
+	overflow-y: hidden;
+ 	
+}
+#ui {
+display: none; 	
+}
+.zone {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height:16%;
+  color: white;
+  text-align: center;
+  display:block;
+  position: absolute;              
+  left: 50%;                        
+  transform: translate(-50%, -20%);
+	
+}
+
+
+.dealer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height:12%;
+  color: white;
+  text-align: center;
+  display:block;
+  position: absolute;              
+  left: 50%;   
+  top:12%;
+  transform: translate(-50%, -50%);
+	
+}
+.players {
+position: relative;	
+width:11%;
+height:60%;
+top:25%;
+
+
+	
+	
+}
+.p1 {
+	position: relative;
+	width: 100%;
+	height: 16%;
+	margin-top:10%;
+	margin-left:5%;
+	float:right;
+	
+
+}
+ .dealer > img   {
+	margin-left:-3%;
+    margin-top:-2%;
+	box-shadow: -7px -9px 5px 1px rgba(0,0,0,0.24);
+	transform:matrix(0.99,-0.08,0.08,0.99,0,0);
+	  border-radius: 5px;
+}
+
+.zone > img    {
+	margin-left:-3%;
+    margin-top:-2%;
+	box-shadow: -7px 9px 5px 1px rgba(0,0,0,0.24);
+	transform: matrix3d(1,-0.05,0.00,0,0.05,1,0.00,-0.0007,0,0,1,0,1,0,0,1);
+	 border-radius: 5px;
+}
+.p1 > img {
+	float:right;
+	margin-left:-6%;
+    margin-top:-2%;
+	box-shadow: -7px 9px 5px 1px rgba(0,0,0,0.24);
+	transform:matrix(0.99,-0.1,0.1,0.99,0,0);
+	 border-radius: 5px;
+}
+.text_big{
+ font-size:25px;
+  color: white;
+  text-align: center;
+}
+
+body {
+	/* background:grey; */
+	
+}

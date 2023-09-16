@@ -1,0 +1,40 @@
+<html>
+	<head>
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        </head>
+	<body>
+		<div id="container"> 
+            <h2 style="text-align:center">Pinboard</h2>
+            <div id="ListButton1">
+                <form id="Forma">
+                    </br>
+                    </br>
+                    <input id="Title" name="Title" placeholder="Title"><br><br>
+                    <input id="Link" name="Link" placeholder="Text/Image link"><br><br>
+                    <br><br>
+                    
+                    <input id= "send" type="submit" onclick="send_values();" value="Pin">
+                    <input id= "remove" type="submit" style="display: none;" onclick="send_values2();" value="Remove">
+                  </form> 
+                <button id="close">Exit</button></br>
+            </div>
+        </div>
+        <div id="container2"> 
+            </br>
+                <div id="ListButton2">
+                <div class="wrapper" id="tableData"></div>
+
+            </div>
+        </div>
+        <div class="paper">
+            <h3 id = "desc" style="display: none;"></h3>
+        </div>
+        <div id="container3"></div>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>

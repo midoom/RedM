@@ -1,0 +1,296 @@
+@font-face {
+    font-family: crock;
+    src: url(crock.ttf);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: inherit;
+    touch-action: manipulation;
+}
+
+body {
+    background: none !important;
+}
+div {
+    padding-left: 5%;
+    height: 78%;
+}
+img {
+    visibility : none;
+}
+.paper{
+    background-image: url("img/background.png");
+    width:30%;
+    height:80%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+  }
+  #send {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    height: 38px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-image: url('images/button.png');
+    background-size: 100% 100%;
+
+    transition-duration: 0.4s;
+}
+  #desc { 
+    color: white;
+    height: 20vw;
+    width: 20vw;
+    border: solid transparent;
+    word-wrap:break-word;
+    margin-top: 2vw;
+    margin-left: 0vw;
+    float: left; 
+    font-size: 100%;
+    word-wrap:break-word;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+th { 
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 6px;
+  }
+::-webkit-scrollbar-track {
+    background: rgb(73, 73, 73); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #b3b3b3; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: rgb(39, 39, 39); 
+  }
+
+.align-left {
+    text-align: left;
+    left: -15px;
+}
+
+#container {
+    -webkit-user-drag: element;
+    display: block;
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 500px;
+    background-image: url('images/background.png');
+    background-size: 100% 100%;
+}
+
+#x {
+    visibility: hidden;
+    position: absolute;
+    top: 1%;
+    width:50%;
+    height:50%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(30, 300px);
+ }
+ 
+ #container2 {
+    -webkit-user-drag: element;
+     display: block;
+     padding: 25px;
+     font-size: 22px;
+     color: rgb(255, 255, 255);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 930px;
+     height: 800px;
+     background-image: url('images/background2.png');
+     background-size: 100% 90%;
+     border: none;
+     overflow: hidden;
+     outline: none;
+     background-color: transparent;
+     background-repeat: no-repeat;
+ }
+
+ #container3 {
+     visibility: hidden;
+     display: block;
+     border: none;
+     overflow: hidden;
+     outline: none;
+     font-size: 22px;
+     color: rgb(255, 255, 255);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 700px;
+     height: 900px;
+     transform: translate(-50%, -50%);
+ }
+
+#ListButton2 {
+    overflow: auto;
+}
+ 
+
+input {
+    color: rgb(233, 233, 233);
+    border: none;
+    overflow: hidden;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    background-image: url('images/button.png');
+    background-size: 100% 100%;
+    width: 90%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: rgb(233, 233, 233);
+    font-family: crock;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0.13em;
+    margin-bottom: 0.83em;
+    margin-left: 0.50em;
+    margin-right: 0;
+
+    padding-top: 25px;
+
+    width: 90%;
+    height: 10%;
+    background-image: url('images/title.png');
+    background-size: 100% 100%;
+}
+
+input[type=submit] {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    height: 38px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-image: url('images/button.png');
+    background-size: 100% 100%;
+
+    transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+    color: white;
+    background-color: transparent;
+    background-image: url('images/sbutton.png');
+    background-size: 100% 100%;
+}
+
+#close {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    height: 38px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-image: url('images/button.png');
+    background-size: 100% 100%;
+
+    transition-duration: 0.4s;
+}
+#close:active {
+    transform: translateY(4px);
+}
+
+#close:hover {
+    color: white;
+    background-color: transparent;
+    background-image: url('images/sbutton.png');
+    background-size: 100% 100%;
+}
+
+
+#send {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    height: 38px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-image: url('images/button.png');
+    background-size: 100% 100%;
+
+    transition-duration: 0.4s;
+}
+#send:active {
+    transform: translateY(4px);
+}
+
+#send:hover {
+    color: white;
+    background-color: transparent;
+    background-image: url('images/sbutton.png');
+    background-size: 100% 100%;
+}
+
+button {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    background-image: url('images/button2.png');
+    background-size: 100% 100%;
+
+    transition-duration: 0.4s;
+}
+button:active {
+    transform: translateY(4px);
+}
+
+button:hover {
+    color: white;
+    background-color: transparent;
+    background-image: url('images/sbutton2.png');
+    background-size: 100% 100%;
+}

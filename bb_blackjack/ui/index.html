@@ -1,0 +1,99 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="style.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<script>
+			$(function(){
+				$(document).keyup(function(e) {
+					if(e.keyCode == 27){
+						$("#ui").css('display', 'none');
+						$.post('http://ak_blackjack/close', JSON.stringify({}));
+					}
+				})
+				window.addEventListener('message', function(event) {
+									console.log("sdsddfdfdf");
+					if(event.data.type == "player"){
+					var data = event.data.cards;
+					var zone = document.getElementById("zone");
+					zone.innerHTML = "";
+						for (x in data) { 
+							var img = document.createElement('img'); 
+							img.src = 'PNG/'+ data[x] +'.png'; 
+							img.style.left = '80%';
+							img.style.height = '80%';
+							document.getElementById('zone').appendChild(img); 
+						}
+					}
+					else if(event.data.type == "dealer"){
+					
+					var data = event.data.cards;
+					var dealer = document.getElementById("dealer");
+					dealer.innerHTML = "";
+						for (x in data) { 
+							var img = document.createElement('img'); 
+							img.src = 'PNG/'+ data[x] +'.png'; 
+							img.style.left = '80%';
+							img.style.height = '80%';
+							document.getElementById('dealer').appendChild(img); 
+						}
+					}
+					else if(event.data.type == "other"){
+					
+					var data = event.data.cards;
+						var p = document.getElementById("players");
+						p.innerHTML = "";
+						for (x in data) { 
+						var _id = parseInt(x) + parseInt(1);
+						var id = "p" + _id;
+						console.log(id);
+						const box = document.createElement("div");
+						box.setAttribute('class', 'p1');
+						box.setAttribute('id', id);
+						p.appendChild(box);
+						for (a in data[x].card) { 
+							var img = document.createElement('img'); 
+							img.src = 'PNG/'+ data[x].card[a] +'.png'; 
+							img.style.left = '80%';
+							img.style.height = '80%';
+							document.getElementById(id).appendChild(img); 
+							}
+						}
+					}
+					else if(event.data.type == "show"){
+						console.log("show");
+						$("#ui").css('display', 'block');
+					}
+					else if(event.data.type == "hide"){
+					
+						$("#ui").css('display', 'none');
+					}
+					else if(event.data.type == "clear"){
+					var zone = document.getElementById("zone");
+					zone.innerHTML = "";
+					var dealer = document.getElementById("dealer");
+					dealer.innerHTML = "";
+					var p = document.getElementById("players");
+					p.innerHTML = "";
+
+					}
+			
+				});
+			});
+		</script>
+	</head>
+	<body id="ui">
+
+		<div id="zone" class="zone">
+			<!-- <p class="text_big">Your cards</p> -->
+		</div>
+		<div id="dealer" class="dealer">
+			<!-- <p class="text_big">Dealer</p> -->
+		</div>
+		<div class="players" id="players">
+		</div>
+		</div>
+
+	</body>
+</html>
