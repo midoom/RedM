@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+#bucket {
+  display: none;
+  height: 1200px;
+  width: 2000px;
+  background: url("../images/bucket.jpg");
+}
