@@ -3,30 +3,30 @@
 
 
 
---Citizen.CreateThread(function()
--- 	while true do
--- 		Citizen.Wait(1)
---		local coords = GetEntityCoords(PlayerPedId())
---     if (Vdist(coords.x, coords.y, coords.z, -286.3942, 796.4553, 118.8803) < 2.0) then
---             DrawTxt("Press [~e~G~q~] to Place Camera.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
---            if IsControlJustReleased(0, 0x760A9C6F) then -- g
---                 TriggerEvent("camera:deploy")
---                 --print('openedwarmenu')
---
---             end
---        end
---     end
---end)
+-- -- Citizen.CreateThread(function()
+-- -- 	while true do
+-- -- 		Citizen.Wait(1)
+-- -- 		local coords = GetEntityCoords(PlayerPedId())
+-- --     if (Vdist(coords.x, coords.y, coords.z, -286.3942, 796.4553, 118.8803) < 2.0) then
+-- --             DrawTxt("Press [~e~G~q~] to Place Camera.", 0.50, 0.85, 0.7, 0.7, true, 255, 255, 255, 255, true)
+-- --             if IsControlJustReleased(0, 0x760A9C6F) then -- g
+-- --                 TriggerEvent("camera:deploy")
+-- --                 --print('openedwarmenu')
 
---function DrawTxt(str, x, y, w, h, enableShadow, col1, col2, col3, a, centre)
---    local str = CreateVarString(10, "LITERAL_STRING", str, Citizen.ResultAsLong())
+-- --             end
+-- --         end
+-- --     end
+-- -- end)
+
+-- function DrawTxt(str, x, y, w, h, enableShadow, col1, col2, col3, a, centre)
+--     local str = CreateVarString(10, "LITERAL_STRING", str, Citizen.ResultAsLong())
 --    SetTextScale(w, h)
 --    SetTextColor(math.floor(col1), math.floor(col2), math.floor(col3), math.floor(a))
 --    SetTextCentre(centre)
 --    if enableShadow then SetTextDropshadow(1, 0, 0, 0, 255) end
 --    Citizen.InvokeNative(0xADA9255D, 10);
 --    DisplayText(str, x, y)
---end
+-- end
 
 
 
@@ -109,7 +109,7 @@ AddEventHandler('camera:deploy', function(source)
 		camera = CreateObject(GetHashKey("P_CAMERA01X"), x,y,z, true, false, true)
 		SetEntityHeading(camera, GetEntityHeading(PlayerPedId())-180)
 		Anim(PlayerPedId(),"script_rc@masn@leadout@rc4","idle_base_mason",3500,1)
-		TriggerEvent("vorp_inventory:CloseInv") -- Close the Inventory Window
+		ExecuteCommand('close') -- Close the Inventory Window
 	end
 end)
 
@@ -148,221 +148,11 @@ Citizen.CreateThread(function(source)
 	end
 end)
 
-----------------------------------
-local unique_bouquet = false 
-local bouquetinhand
-RegisterNetEvent('prop:unique_bouquet')
-AddEventHandler('prop:unique_bouquet', function() 
-    TriggerEvent("vorp_inventory:CloseInv")
-    if unique_bouquet then 
-       DeleteEntity(bouquetinhand)
-       unique_bouquet = false 
-    else
-       unique_bouquet = true 
-       local ped = PlayerPedId()
-       local coords = GetEntityCoords(ped, true)
-       local male = IsPedMale(ped)
-       bouquetinhand = CreateObject(GetHashKey('p_pot_flowerarng02x'), coords.x, coords.y, coords.z, true, true, true)
-       local lefthand = GetEntityBoneIndexByName(ped, "SKEL_L_Hand")
-       if male then
-           AttachEntityToEntity(bouquetinhand, ped, lefthand, 0.08, -0.1, 0.1, 75.0, 155.0, 180.0, true, true, false, true, 1, true)
-       else
-           AttachEntityToEntity(bouquetinhand, ped, lefthand, 0.05, -0.1, 0.1, 65.0, 150.0, 185.0, true, true, false, true, 1, true)
-       end
-    end
-end)
-
-local parasolout = false
-local EndPrompt
-local ParasolGroup = GetRandomIntInRange(0, 0xffffff)
-local parasolObj
-
-local parasolout = false
-local EndPrompt
-local ParasolGroup = GetRandomIntInRange(0, 0xffffff)
-local parasolObj
-local itemtype
-local caneobj
-local canestat = false 
-RegisterNetEvent('prop:cane')
-AddEventHandler('prop:cane', function() 
-    TriggerEvent("vorp_inventory:CloseInv")
-    if not canestat then 
-        canestat = true 
-        local model = GetHashKey("p_cane01x")
-        local pedp = PlayerPedId()
-        local pc = GetEntityCoords(pedp)
-        RequestModel(model)
-        while not HasModelLoaded(model) do
-            Wait(10)
-        end
-        caneobj = CreateObject(model, pc.x,pc.y,pc.z, true, true, true)
-        SetModelAsNoLongerNeeded(model)
-        if IsPedMale(pedp) then 
-            boneIndex = GetEntityBoneIndexByName(pedp, "SKEL_L_Hand")
-            Attach = {0.1, -0.8, 0.03, -90.0, 1.0, 0.0}
-        else
-            boneIndex = GetEntityBoneIndexByName(pedp, "SKEL_L_Hand")
-            Attach = {0.1, -0.8, 0.03, -90.0, 1.0, 0.0}
-        end
-        AttachEntityToEntity(caneobj, pedp, boneIndex, Attach[1], Attach[2], Attach[3], Attach[4], Attach[5], Attach[6], false, false, false, true, 2, true)
-    else
-        canestat = false 
-        DeleteEntity(caneobj)
-    end
-
-end)
-
-Citizen.CreateThread(function() --
-	while true do
-        Wait(1)
-        local sleep = true 
-        if parasolout then
-            sleep = false  
-            if not IsEntityPlayingAnim(PlayerPedId(), "amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base","wip_base", 3) then 
-                TaskPlayAnim(PlayerPedId(), "amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base", "wip_base", 5.0, 5.0, -1, 31, 0)
-            end
-        end
-        if sleep then 
-            Wait(500)
-        end
-    end
-end)
-
-function CreateParasol()
-    TriggerEvent("vorp_inventory:CloseInv")
-    if parasolObj ~= nil then
-        DeleteEntity(parasolObj)
-        SetEntityAsNoLongerNeeded(parasolObj)
-        parasolObj = nil
-    end
-    local pedp = PlayerPedId()
-    local pc = GetEntityCoords(pedp)
-    local model
-    local boneIndex
-    local Attach
-    if itemtype == "parasol" then 
-        model = GetHashKey("p_parasol02x")
-        if IsPedMale(pedp) then 
-            boneIndex = 337
-            Attach = {0.07, -0.01, -0.03, -90.0, 0.0, 0.0}
-        else
-            boneIndex = 396
-            Attach = {0.07, -0.03, -0.03, -90.0, 0.0, 0.0}
-        end
-    elseif itemtype == "lumberaxe" then 
-        model = GetHashKey("p_axe02x")
-        if IsPedMale(pedp) then 
-            boneIndex = 337
-            Attach = {0.06, -0.2, -0.03, -90.0, -6.0, 0.0}
-        else
-            boneIndex = 396
-            Attach = {0.06, -0.22, -0.03, -90.0, -10.0, 0.0}
-        end
-    end
-    RequestModel(model)
-    while not HasModelLoaded(model) do
-        Wait(10)
-    end
-    parasolObj = CreateObject(model, pc.x,pc.y,pc.z, true, true, true)
-    AttachEntityToEntity(parasolObj, pedp, boneIndex, Attach[1], Attach[2], Attach[3], Attach[4], Attach[5], Attach[6], false, false, false, true, 2, true)
-    SetModelAsNoLongerNeeded(model)
-
-    if not HasAnimDictLoaded("amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base") then 
-        RequestAnimDict("amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base")
-        while not HasAnimDictLoaded("amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base") do 
-            Citizen.Wait(1)
-        end
-    end
-
-    TaskPlayAnim(pedp, "amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base", "wip_base", 5.0, 5.0, -1, 31, 0)
-    Citizen.Wait(100)
-end
-
-function EndParasol()
-    if parasolout == true then
-        if parasolObj ~= nil then
-            DeleteEntity(parasolObj)
-            SetEntityAsNoLongerNeeded(parasolObj)
-            parasolObj = nil
-        end
-        RemoveAnimDict("amb_rest_sit@prop_human_seat_bench@parasol@female_a@wip_base")
-        ClearPedTasksImmediately(PlayerPedId())
-        parasolout = false
-        return
-    end
-end
-
-function SetupParasolPrompt()
-    local str2 = "Stop"
-    EndPrompt = PromptRegisterBegin()
-    PromptSetControlAction(EndPrompt, 0x8CC9CD42) 
-    str2 = CreateVarString(10, 'LITERAL_STRING', str2)
-    PromptSetText(EndPrompt, str2)
-    PromptSetEnabled(EndPrompt, 1)
-    PromptSetVisible(EndPrompt, 1)
-	PromptSetStandardMode(EndPrompt,1)
-	PromptSetGroup(EndPrompt, ParasolGroup)
-	Citizen.InvokeNative(0xC5F428EE08FA7F2C,EndPrompt,true)
-	PromptRegisterEnd(EndPrompt)
-end
-
-Citizen.CreateThread(function() --
-    SetupParasolPrompt()
-	while true do
-		local t = 5
-		if parasolout == true then
-            local label 
-            if itemtype == "parasol" then
-                label  = CreateVarString(10, 'LITERAL_STRING', "Parasol")
-            elseif itemtype == "lumberaxe" then
-                label  = CreateVarString(10, 'LITERAL_STRING', "Axe")
-            end
-            PromptSetActiveGroupThisFrame(ParasolGroup, label)
-
-            if Citizen.InvokeNative(0xC92AC953F0A982AE,EndPrompt) then
-                EndParasol()
-            end
-            if IsPedSwimming(PlayerPedId()) or IsPedFalling(PlayerPedId()) or IsEntityDead(PlayerPedId()) then
-                EndParasol()
-            end
-        else
-            t = 2000
-        end
-        Citizen.Wait(t)
-    end
-end)
-
-
-RegisterNetEvent('prop:parasol')
-AddEventHandler('prop:parasol', function(one) 
-    itemtype = one 
-    local playerp = PlayerPedId()
-    if  not IsEntityDead(playerp) and parasolout == false and GetMount(playerp) == 0 and not IsPedSwimming(playerp) and not IsPedClimbing(playerp) and not IsPedFalling(playerp) then
-        parasolout = true
-        CreateParasol()
-    end
-end)
-AddEventHandler('onResourceStop', function(resourceName)
-	if (GetCurrentResourceName() ~= resourceName) then
-	  return
-	end
-    DeleteObject(bouquetinhand)
-    DeleteObject(caneobj)
-    DeleteObject(parasolObj)        
-    ClearPedTasksImmediately(PlayerPedId())
-        
-    PromptDelete(EndPrompt)
-end)
-
-----------------------
-
-
 --Ledger animation
 RegisterNetEvent('prop:ledger')
 AddEventHandler('prop:ledger', function() 
     FPrompt("Put Away", 0x3B24C470, false)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
         
     RequestAnimDict("amb_work@world_human_write_notebook@female_a@idle_c")
     while not HasAnimDictLoaded("amb_work@world_human_write_notebook@female_a@idle_c") do
@@ -414,94 +204,92 @@ AddEventHandler('prop:ledger', function()
     end
 end)
 
-RegisterNetEvent('prop:unique_dr_cleanser')
-AddEventHandler('prop:unique_dr_cleanser', function() 
-    PlaySoundFrontend("Core_Full", "Consumption_Sounds", true, 0)
-    FPrompt("Finish Drinking", 0x3B24C470, false)
-    local ped = PlayerPedId()
-    local male = IsPedMale(ped)
-    local x,y,z = table.unpack(GetEntityCoords(ped, true))
-    local beer = CreateObject(GetHashKey('p_bottleBeer01x'), x, y, z + 0.2, true, true, true)
-    local boneIndex = GetEntityBoneIndexByName(ped, "SKEL_R_Finger12")
-    if male then
-    if not IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@male_a@idle_a", "idle_a", 3) then
-        Wait(100)
-        Anim(ped,"amb_rest_drunk@world_human_drinking@male_a@idle_a","idle_a",-1,31)
-        AttachEntityToEntity(beer, ped,boneIndex, 0.07, -0.0200, 0.12250, 0.024, -160.0, -40.0, true, true, false, true, 1, true)
-        Wait(1000)
-    end
-    else --if female
-    if not IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@female_a@idle_a", "idle_b", 3) then
-        Wait(100)
-        Anim(ped,"amb_rest_drunk@world_human_drinking@female_a@idle_a","idle_b",-1,31)
-        AttachEntityToEntity(beer, ped,GetEntityBoneIndexByName(ped, "SKEL_R_Hand"), 0.035, -0.03, -0.068, -50.0, 65.0, 0.0, true, true, false, true, 1, true)
-        Wait(1000)
-    end
-    end    if proppromptdisplayed == false then
-		PromptSetEnabled(PropPrompt, true)
-		PromptSetVisible(PropPrompt, true)
-		proppromptdisplayed = true
-	end    while IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@male_a@idle_a", "idle_a", 3)
-       or IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@female_a@idle_a", "idle_b", 3) do
-        Wait(1)
-		if IsControlJustReleased(0, 0x3B24C470) then
-			PromptSetEnabled(PropPrompt, false)
-			PromptSetVisible(PropPrompt, false)
-			proppromptdisplayed = false            if male then
-                StopAnimTask(ped, 'amb_rest_drunk@world_human_drinking@male_a@idle_a', "idle_a", 1.0)
-                Wait(10)
-                Anim(ped,"amb_wander@upperbody_player_discard_items@whiskey@arthur@trans","whiskey_trans_nodrink",-1, 24)
-                Wait(5650)
-                local rx, ry, rz = table.unpack(GetEntityRotation(beer, true))
-                local facing = math.rad(GetEntityHeading(ped))
-                DetachEntity(beer, true, true)
-                SetEntityRotation(beer, rx,ry,rz, 1, true)
-                SetEntityVelocity(beer, math.cos(facing), math.sin(facing), 1.5)
-            else
-                StopAnimTask(PlayerPedId(), 'amb_rest_drunk@world_human_drinking@female_a@idle_a', "idle_b", 1.0)
-                Wait(1000)
-                DetachEntity(beer, true, true)
-                ClearPedSecondaryTask(ped)
-            end
-			break
-		end
-    end
-    PromptSetEnabled(PropPrompt, false)
-	PromptSetVisible(PropPrompt, false)
-	proppromptdisplayed = false
-    if male then
-        StopAnimTask(ped, 'amb_rest_drunk@world_human_drinking@male_a@idle_a', "idle_a", 1.0)
-        local rx, ry, rz = table.unpack(GetEntityRotation(beer, true))
-        DetachEntity(beer, true, true)
-        ClearPedSecondaryTask(ped)
-        RemoveAnimDict("amb_rest_drunk@world_human_drinking@male_a@idle_a")
-    else
-        StopAnimTask(PlayerPedId(), 'amb_rest_drunk@world_human_drinking@female_a@idle_a', "idle_b", 1.0)
-        DetachEntity(beer, true, true)
-        ClearPedSecondaryTask(ped)
-        RemoveAnimDict("amb_rest_drunk@world_human_drinking@female_a@idle_a")
-    end
-    Wait(5000)
-    if not DoesAnimDictExist("amb_misc@world_human_vomit@male_a@idle_c") then
-		return
-	end
 
-	RequestAnimDict("amb_misc@world_human_vomit@male_a@idle_c")
+---Animations for Drinkin Booze, I dont use since i use poke_licor, but might be of use for helpful snippets
 
-	while not HasAnimDictLoaded("amb_misc@world_human_vomit@male_a@idle_c") do
-		Wait(0)
-	end
 
-	TaskPlayAnim(ped, "amb_misc@world_human_vomit@male_a@idle_c", "idle_h", 1.0, 1.0, -1, 0, 0, false, false, false, '', false)
+-- --Beer drinking animation
+-- RegisterNetEvent('prop:beer')
+-- AddEventHandler('prop:beer', function() 
+--     PlaySoundFrontend("Core_Full", "Consumption_Sounds", true, 0)
+-- 	ExecuteCommand('close')
+--     FPrompt("Finish Drinking", 0x3B24C470, false)
+--     local ped = PlayerPedId()
+--     local male = IsPedMale(ped)
+--     local x,y,z = table.unpack(GetEntityCoords(ped, true))
+--     local beer = CreateObject(GetHashKey('p_bottleBeer01x'), x, y, z + 0.2, true, true, true)
+--     local boneIndex = GetEntityBoneIndexByName(ped, "SKEL_R_Finger12")
+--     if male then
+--     if not IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@male_a@idle_a", "idle_a", 3) then
+--         Wait(100)
+--         Anim(ped,"amb_rest_drunk@world_human_drinking@male_a@idle_a","idle_a",-1,31)
+--         AttachEntityToEntity(beer, ped,boneIndex, 0.07, -0.0200, 0.12250, 0.024, -160.0, -40.0, true, true, false, true, 1, true)
+--         Wait(1000)
+--     end
+--     else --if female
+--     if not IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@female_a@idle_a", "idle_b", 3) then
+--         Wait(100)
+--         Anim(ped,"amb_rest_drunk@world_human_drinking@female_a@idle_a","idle_b",-1,31)
+--         AttachEntityToEntity(beer, ped,GetEntityBoneIndexByName(ped, "SKEL_R_Hand"), 0.035, -0.03, -0.068, -50.0, 65.0, 0.0, true, true, false, true, 1, true)
+--         Wait(1000)
+--     end
+--     end
 
-	RemoveAnimDict("amb_misc@world_human_vomit@male_a@idle_c")
-end)
+--     if proppromptdisplayed == false then
+-- 		PromptSetEnabled(PropPrompt, true)
+-- 		PromptSetVisible(PropPrompt, true)
+-- 		proppromptdisplayed = true
+-- 	end
+
+--     while IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@male_a@idle_a", "idle_a", 3)
+--        or IsEntityPlayingAnim(ped, "amb_rest_drunk@world_human_drinking@female_a@idle_a", "idle_b", 3) do
+--         Wait(1)
+-- 		if IsControlJustReleased(0, 0x3B24C470) then
+-- 			PromptSetEnabled(PropPrompt, false)
+-- 			PromptSetVisible(PropPrompt, false)
+-- 			proppromptdisplayed = false
+
+--             if male then
+--                 StopAnimTask(ped, 'amb_rest_drunk@world_human_drinking@male_a@idle_a', "idle_a", 1.0)
+--                 Wait(10)
+--                 Anim(ped,"amb_wander@upperbody_player_discard_items@whiskey@arthur@trans","whiskey_trans_nodrink",-1, 24)
+--                 Wait(5650)
+--                 local rx, ry, rz = table.unpack(GetEntityRotation(beer, true))
+--                 local facing = math.rad(GetEntityHeading(ped))
+--                 DetachEntity(beer, true, true)
+--                 SetEntityRotation(beer, rx,ry,rz, 1, true)
+--                 SetEntityVelocity(beer, math.cos(facing), math.sin(facing), 1.5)
+--             else
+--                 StopAnimTask(PlayerPedId(), 'amb_rest_drunk@world_human_drinking@female_a@idle_a', "idle_b", 1.0)
+--                 Wait(1000)
+--                 DetachEntity(beer, true, true)
+--                 ClearPedSecondaryTask(ped)
+--             end
+-- 			break
+-- 		end
+--     end
+--     PromptSetEnabled(PropPrompt, false)
+-- 	PromptSetVisible(PropPrompt, false)
+-- 	proppromptdisplayed = false
+--     if male then
+--         StopAnimTask(ped, 'amb_rest_drunk@world_human_drinking@male_a@idle_a', "idle_a", 1.0)
+--         local rx, ry, rz = table.unpack(GetEntityRotation(beer, true))
+--         DetachEntity(beer, true, true)
+--         ClearPedSecondaryTask(ped)
+--         RemoveAnimDict("amb_rest_drunk@world_human_drinking@male_a@idle_a")
+--     else
+--         StopAnimTask(PlayerPedId(), 'amb_rest_drunk@world_human_drinking@female_a@idle_a', "idle_b", 1.0)
+--         DetachEntity(beer, true, true)
+--         ClearPedSecondaryTask(ped)
+--         RemoveAnimDict("amb_rest_drunk@world_human_drinking@female_a@idle_a")
+--     end
+-- end)
 
 -- --Whisky drinking animation
 -- RegisterNetEvent('prop:whiskey')
 -- AddEventHandler('prop:whiskey', function() 
 --     PlaySoundFrontend("Core_Full", "Consumption_Sounds", true, 0)
--- 	TriggerEvent("vorp_inventory:CloseInv")
+-- 	ExecuteCommand('close')
 --     FPrompt("Finish Drinking", 0x3B24C470, false)
 --     local ped = PlayerPedId()
 --     local male = IsPedMale(ped)
@@ -582,7 +370,7 @@ AddEventHandler('prop:watch', function()
     while (not HasAnimDictLoaded('mech_inventory@item@pocketwatch@unarmed@base')) do
 		Citizen.Wait(300)
     end
-	TriggerEvent("vorp_inventory:CloseInv")
+	ExecuteCommand('close')
 	prop_name = 'S_INV_POCKETWATCH03X'
 	local ped = PlayerPedId()
 	local x,y,z = table.unpack(GetEntityCoords(ped, true))
@@ -627,7 +415,7 @@ end, false)
 RegisterNetEvent('prop:book')
 AddEventHandler('prop:book', function() 
     FPrompt()
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
         
     TaskStartScenarioInPlace(PlayerPedId(), GetHashKey("WORLD_HUMAN_SIT_GROUND_READING_BOOK"), -1, true, "StartScenario", 0, false)
     Wait(1)
@@ -661,7 +449,7 @@ AddEventHandler('prop:cigarettes', function()
     FPrompt("Finish Smoking", 0x3B24C470, false)
     LMPrompt("Inhale", 0x07B8BEAF, false)
     EPrompt("Change Stance", 0xD51B784F, false)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)
     local x,y,z = table.unpack(GetEntityCoords(ped, true))
@@ -967,7 +755,7 @@ AddEventHandler('prop:cigar', function()
 
     --Citizen.InvokeNative( 0xF6A7C08DF2E28B28, PlayerPedId(), 0, 1000.0, false )
     --PlaySoundFrontend("Core_Full", "Consumption_Sounds", true, 0)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
     FPrompt('Stop Smoking', 0x3B24C470, false)
     local prop_name = 'P_CIGAR01X'
     local ped = PlayerPedId()
@@ -1036,7 +824,7 @@ AddEventHandler('prop:syn', function()
     FPrompt("Put Away", 0x3B24C470, false)
     LMPrompt("Use", 0x07B8BEAF, false)
     EPrompt("Pose", 0xD51B784F, false)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)
     local x,y,z = table.unpack(GetEntityCoords(ped, true))
@@ -1186,7 +974,7 @@ RegisterNetEvent('prop:fan')
 AddEventHandler('prop:fan', function() 
     FPrompt("Put Away", 0x3B24C470, false)
     LMPrompt("Little Wave", 0x07B8BEAF, false)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
     local ped = PlayerPedId()
     local male = IsPedMale(ped)
     local x,y,z = table.unpack(GetEntityCoords(ped, true))
@@ -1274,7 +1062,7 @@ AddEventHandler('prop:chewingtobacco', function()
     FPrompt("Finish", 0x3B24C470, false)
     LMPrompt("Do Something", 0x07B8BEAF, false)
     EPrompt("Change Stance", 0xD51B784F, false)
-    TriggerEvent("vorp_inventory:CloseInv")
+    ExecuteCommand('close')
     local ped = PlayerPedId()
     local x,y,z = table.unpack(GetEntityCoords(ped, true))
     local righthand = GetEntityBoneIndexByName(ped, "SKEL_R_Finger13")
@@ -1471,65 +1259,32 @@ end)
 --Hair Pomade
 RegisterNetEvent('prop:hairpomade')
 AddEventHandler('prop:hairpomade', function()
-    TriggerEvent("vorp_inventory:CloseInv")
-    Pomade()
+    ExecuteCommand('close')
+    local ped = PlayerPedId()
+    local male = IsPedMale(ped)
+    local wearinghat = Citizen.InvokeNative(0xFB4891BD7578CDC1, PlayerPedId(), 0x9925C067)
+    local basedict = "mech_inventory@apply_pomade"
+    RequestAnimDict(basedict)
+    if wearinghat and not male then
+        print('yup')
+        ExecuteCommand('hat')
+        Wait(250)
+        Anim(ped,basedict,"apply_pomade_no_hat",-1,0)
+        Wait(5166)
+        ExecuteCommand('hat')
+    elseif wearinghat and male then
+        Anim(ped,basedict,"apply_pomade_hat",-1,0)
+    else
+        Anim(ped,basedict,"apply_pomade_no_hat",-1,0)
+    end
+    Wait(5733)
+
+    ClearPedSecondaryTask(ped)
+    RemoveAnimDict(base)
+    Wait(100)
+    ClearPedTasks(ped)
 end)
 
-function Pomade()
-    local playerPed = PlayerPedId()
-    if Citizen.InvokeNative(0xFB4891BD7578CDC1, playerPed, tonumber(0x9925C067)) then   -- _IS_METAPED_USING_COMPONENT
-        TaskItemInteraction(playerPed, 0, GetHashKey("APPLY_POMADE_WITH_HAT"), 1, 0, -1082130432)
-    else
-        TaskItemInteraction(playerPed, 0, GetHashKey("APPLY_POMADE_WITH_NO_HAT"), 1, 0, -1082130432)
-    end
-    Wait(1500)
-    Citizen.InvokeNative(0x66B957AAC2EAAEAB, playerPed, GetCurrentPedComponent(playerPed, "hair"), GetHashKey("POMADE"), 0, true, 1) -- _UPDATE_SHOP_ITEM_WEARABLE_STATE
-    Citizen.InvokeNative(0xCC8CA3E88256E58F, playerPed, false, true, true, true, false) -- _UPDATE_PED_VARIATION
-end
-
-function GetCurrentPedComponent(ped, category)
-
-    local componentsCount = GetNumComponentsInPed(ped)
-    if not componentsCount then
-        return 0
-    end
-    local metaPedType = GetMetaPedType(ped)
-    local dataStruct = DataView.ArrayBuffer(6 * 8)
-    local fullPedComponents = {}
-    for i = 0, componentsCount, 1 do
-        local componentHash = GetShopPedComponentAtIndex(ped, i, true, dataStruct:Buffer(), dataStruct:Buffer())
-        if componentHash then
-            local componentCategoryHash = GetShopPedComponentCategory(componentHash, metaPedType, true)
-            if category ~= nil then
-                if GetHashKey(category) == componentCategoryHash then
-                    return componentHash
-                end
-            else
-                fullPedComponents[componentCategoryHash] = componentHash
-            end
-        end
-    end
-    if category then
-        return 0
-    end
-    return fullPedComponents
-end
-
-function GetNumComponentsInPed(ped)
-    return Citizen.InvokeNative(0x90403E8107B60E81, ped)
-end
-
-function GetMetaPedType(ped)
-    return Citizen.InvokeNative(0xEC9A1261BF0CE510, ped)
-end
-
-function GetShopPedComponentAtIndex(ped, index, bool, struct1, struct2)
-    return Citizen.InvokeNative(0x77BA37622E22023B, ped, index, bool, struct1, struct2)
-end
-
-function GetShopPedComponentCategory(componentHash, metaPedType, bool)
-    return Citizen.InvokeNative(0x5FF9A878C3D115B8, componentHash, metaPedType, bool)
-end
 
 
 --Force 1st person view when watch is out
@@ -1580,135 +1335,3 @@ Citizen.CreateThread(function()
     StopAnimTask(PlayerPedId(), dict, body, 1.0)
     end)
 end
-
-RegisterNetEvent('prop:Indian_Tobbaco')
-AddEventHandler('prop:Indian_Tobbaco', function() 
-    FPrompt("Put Away", 0x3B24C470, false)
-    LMPrompt("Use", 0x07B8BEAF, false)
-    EPrompt("Pose", 0xD51B784F, false)
-    TriggerEvent("vorp_inventory:CloseInv")
-    local ped = PlayerPedId()
-    local male = IsPedMale(ped)
-    local x,y,z = table.unpack(GetEntityCoords(ped, true))
-    local syn = CreateObject(GetHashKey('P_PIPE01X'), x, y, z + 0.2, true, true, true)
-    local righthand = GetEntityBoneIndexByName(ped, "SKEL_R_Finger13")
-    AttachEntityToEntity(syn, ped, righthand, 0.005, -0.045, 0.0, -170.0, 10.0, -15.0, true, true, false, true, 1, true)
-    Anim(ped,"amb_wander@code_human_smoking_wander@male_b@trans","nopipe_trans_pipe",-1,30)
-    Wait(9000)
-    Anim(ped,"amb_rest@world_human_smoking@male_b@base","base",-1,31)
-    Citizen.InvokeNative(0xF6A7C08DF2E28B28, ped, 1, 2500.0)
-    PlaySoundFrontend("Core_Fill_Up", "Consumption_Sounds", true, 0)
-
-
-
-    while not IsEntityPlayingAnim(ped,"amb_rest@world_human_smoking@male_b@base","base", 3) do
-        Wait(100)
-    end
-
-    if proppromptdisplayed == false then
-        PromptSetEnabled(PropPrompt, true)
-        PromptSetVisible(PropPrompt, true)
-        PromptSetEnabled(UsePrompt, true)
-        PromptSetVisible(UsePrompt, true)
-        PromptSetEnabled(ChangeStance, true)
-        PromptSetVisible(ChangeStance, true)
-        proppromptdisplayed = true
-	end
-
-    while IsEntityPlayingAnim(ped, "amb_rest@world_human_smoking@male_b@base","base", 3) do
-
-        Wait(5)
-		if IsControlJustReleased(0, 0x3B24C470) then
-            PromptSetEnabled(PropPrompt, false)
-            PromptSetVisible(PropPrompt, false)
-            PromptSetEnabled(UsePrompt, false)
-            PromptSetVisible(UsePrompt, false)
-            PromptSetEnabled(ChangeStance, false)
-            PromptSetVisible(ChangeStance, false)
-            proppromptdisplayed = false
-
-            Anim(ped, "amb_wander@code_human_smoking_wander@male_b@trans", "pipe_trans_nopipe", -1, 30)
-            Wait(6066)
-            DeleteEntity(syn)
-            ClearPedSecondaryTask(ped)
-            ClearPedTasks(ped)
-            Wait(10)
-		end
-        
-        if IsControlJustReleased(0, 0xD51B784F) then
-            Anim(ped, "amb_rest@world_human_smoking@pipe@proper@male_d@wip_base", "wip_base", -1, 30)
-            Wait(5000)
-            Anim(ped, "amb_rest@world_human_smoking@male_b@base","base", -1, 31)
-            Wait(100)
-        end
-
-        if IsControlJustReleased(0, 0x07B8BEAF) then
-            Wait(500)
-            if IsControlPressed(0, 0x07B8BEAF) then
-                Anim(ped, "amb_rest@world_human_smoking@male_b@idle_b","idle_d", -1, 30, 0)
-                Wait(15599)
-                Anim(ped, "amb_rest@world_human_smoking@male_b@base","base", -1, 31, 0)
-                Wait(100)
-            else
-                Anim(ped, "amb_rest@world_human_smoking@male_b@idle_a","idle_a", -1, 30, 0)
-                Wait(22600)
-                Anim(ped, "amb_rest@world_human_smoking@male_b@base","base", -1, 31, 0)
-                Wait(100)
-            end
-        end
-    end
-
-    PromptSetEnabled(PropPrompt, false)
-    PromptSetVisible(PropPrompt, false)
-    PromptSetEnabled(UsePrompt, false)
-    PromptSetVisible(UsePrompt, false)
-    PromptSetEnabled(ChangeStance, false)
-    PromptSetVisible(ChangeStance, false)
-    proppromptdisplayed = false
-
-    DetachEntity(syn, true, true)
-    ClearPedSecondaryTask(ped)
-    RemoveAnimDict("amb_wander@code_human_smoking_wander@male_b@trans")
-    RemoveAnimDict("amb_rest@world_human_smoking@male_b@base")
-    RemoveAnimDict("amb_rest@world_human_smoking@pipe@proper@male_d@wip_base")
-    RemoveAnimDict("amb_rest@world_human_smoking@male_b@idle_a")
-    RemoveAnimDict("amb_rest@world_human_smoking@male_b@idle_b")
-    Wait(100)
-    ClearPedTasks(ped)
-end)
-
-
-RegisterNetEvent('prop:unique_guitar_special')
-AddEventHandler('prop:unique_guitar_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `WORLD_HUMAN_SIT_GUITAR`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_trumpet_special')
-AddEventHandler('prop:unique_trumpet_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `WORLD_HUMAN_TRUMPET`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_mandolin_special')
-AddEventHandler('prop:unique_mandolin_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `PROP_HUMAN_SEAT_BENCH_MANDOLIN`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_banjo_special')
-AddEventHandler('prop:unique_banjo_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `PROP_HUMAN_SEAT_CHAIR_BANJO`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_harmonica_special')
-AddEventHandler('prop:unique_harmonica_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `PROP_HUMAN_SEAT_BENCH_HARMONICA`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_acordeon_special')
-AddEventHandler('prop:unique_acordeon_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `PROP_HUMAN_SEAT_BENCH_CONCERTINA`, 360000, true, false, 25, true)
-end)
-
-RegisterNetEvent('prop:unique_guimbarde_special')
-AddEventHandler('prop:unique_guimbarde_special', function() 
-    TaskStartScenarioInPlace(PlayerPedId(), `PROP_HUMAN_SEAT_BENCH_CONCERTINA`, 360000, true, false, 25, true)
-end)

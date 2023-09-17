@@ -1,17 +1,9 @@
 VORP = exports.vorp_inventory:vorp_inventoryApi()
 
+
 VORP.RegisterUsableItem("cigarette", function(data)
 	VORP.subItem(data.source, "cigarette", 1)
 	TriggerClientEvent('prop:cigarettes', data.source)
-end)
-
-VORP.RegisterUsableItem("cigar", function(data)
-	VORP.subItem(data.source, "cigar", 1)
-	TriggerClientEvent('prop:cigar', data.source)
-end)
-
-VORP.RegisterUsableItem("camera", function(data)
-	TriggerClientEvent('camera:deploy', data.source)
 end)
 
 VORP.RegisterUsableItem("hairpomade", function(data)
@@ -19,8 +11,34 @@ VORP.RegisterUsableItem("hairpomade", function(data)
 	TriggerClientEvent('prop:hairpomade', data.source)
 end)
 
+
+VORP.RegisterUsableItem("cigar", function(data)
+	VORP.subItem(data.source, "cigar", 1)
+	TriggerClientEvent('prop:cigar', data.source)
+end)
+
+VORP.RegisterUsableItem("syn", function(data)
+	
+	count = VORP.getItemCount(data.source, "pipe")
+	if count >= 1 then
+		VORP.subItem(data.source, "syn", 1)
+		TriggerClientEvent('prop:syn', data.source)
+	else
+		TriggerClientEvent("vorp:TipRight", data.source, "You need a pipe to smoke syn", 3000)
+	end
+
+end)
+
+VORP.RegisterUsableItem("notebook", function(data)
+	TriggerClientEvent('prop:ledger', data.source)
+end)
+
 VORP.RegisterUsableItem("pocket_watch", function(data)
 	TriggerClientEvent('prop:watch', data.source)
+end)
+
+VORP.RegisterUsableItem("book", function(data)
+	TriggerClientEvent('prop:book', data.source)
 end)
 
 VORP.RegisterUsableItem("pipe", function(data)
@@ -36,47 +54,4 @@ VORP.RegisterUsableItem("chewingtobacco", function(data)
 	TriggerClientEvent('prop:chewingtobacco', data.source)
 end)
 
-VORP.RegisterUsableItem("unique_dr_cleanser", function(data)
-	VORP.subItem(data.source, "unique_dr_cleanser", 1)
-	TriggerClientEvent('prop:unique_dr_cleanser', data.source)
-end)
 
-VORP.RegisterUsableItem("guitar", function(data)
-	TriggerClientEvent('prop:unique_guitar_special', data.source)
-end)
-
-VORP.RegisterUsableItem("trompette", function(data)
-	TriggerClientEvent('prop:unique_trompette_special', data.source)
-end)
-
-VORP.RegisterUsableItem("mandolin", function(data)
-	TriggerClientEvent('prop:unique_mandolin_special', data.source)
-end)
-
-VORP.RegisterUsableItem("banjo", function(data)
-	TriggerClientEvent('prop:unique_banjo_special', data.source)
-end)
-
-VORP.RegisterUsableItem("harmonica", function(data)
-	TriggerClientEvent('prop:unique_harmonica_special', data.source)
-end)
-
-VORP.RegisterUsableItem("acordeon", function(data)
-	TriggerClientEvent('prop:unique_acordeon_special', data.source)
-end)
-
-VORP.RegisterUsableItem("guimbarde", function(data)
-	TriggerClientEvent('prop:unique_guimbarde_special', data.source)
-end)
-
-VORP.RegisterUsableItem("unique_bouquet", function(data)
-	TriggerClientEvent('prop:unique_bouquet', data.source)
-end)
-
-VORP.RegisterUsableItem("parasol", function(data)
-	TriggerClientEvent('prop:parasol', data.source,"parasol")
-end)
-
-VORP.RegisterUsableItem("cane", function(data)
-	TriggerClientEvent('prop:cane', data.source)
-end)

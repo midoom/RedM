@@ -15,7 +15,7 @@ Config.keys = {
 
 Config.constructioncompany = {
     blackwater = {
-        Pos = {x = -835.059, y = -1259.07, z = 43.617, h = 98.205}, -- location
+        Pos = {x= -859.22, y=-1279.78, z=43.55, h = 4.44}, -- location 
 		blipsprite = 2107754879, -- blip sprite 
         showblip = true, -- show blip or not 
         Name = 'Blackwater Construction', -- blip name 
@@ -33,7 +33,7 @@ Config.constructioncompany = {
 Config.missions = {
     blackwater = {
         materialpickup = {x= -841.58, y=-1260.55, z=43.48},
-        reward = 1, -- depending on tasks done and if the player failed skill checks
+        reward = 10, -- depending on tasks done and if the player failed skill checks
         workspots = {
             {x= -839.8, y=-1272.8, z=43.4, wa= 'PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_SMALL'},
             {x= -859.38, y=-1245.66, z=43.48, wa= 'PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_SMALL'},
@@ -43,7 +43,7 @@ Config.missions = {
     },
     val = {
         materialpickup = {x= -338.27, y=820.2, z=117.52},
-        reward = 1, 
+        reward = 25, 
         workspots = {
             {x= -361.40, y=792.8, z=116.19, wa= 'PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_SMALL'},
             {x= -324.77, y=809.84, z=117.40, wa= 'PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_SMALL'},
@@ -61,20 +61,20 @@ Config.missions = {
 }
 
 Config.Language = {
-constructionmenu = "Appuyer sur G",
+constructionmenu = "Press G To Open Construction Menu",
 construction = "Construction",
-startjob = "Commencer le travaille",
+startjob = "Start Job",
 trust = "Trust: ",
-marked = "Aller a l'emplacement marque",
-pickup = "Ramasser le matériel",
-pressgtopickup = "Appuyer sur G pour prendre votre materiel",
-dosomework = "Lieu de travail",
-startconst = "Appuyer sur G pour commencer la construction",
-finishedtasks = "Terminé votre travail pour la journée, retournez voir le contremaître",
-finishwork = "Arreter de travailler",
-messedup = "Vous avez rate la tâche",
-paid = "Vous avez été payé $ ",
-nowork = "Vous n'avez pas fait assez de travail pour être payé",
+marked = "Go To Marked Location",
+pickup = "Material Pickup",
+pressgtopickup = "Press G To Pickup Materials",
+dosomework = "Work Location",
+startconst = "Press G To Start Construction",
+finishedtasks = "Finished Your Work for The Day, Head Back to the Foreman",
+finishwork = "Sign Out",
+messedup = "You Messed Up The Task",
+paid = "You Got Paid $ ",
+nowork = "You Didnt Do Enough Work To Get Paid",
 }
 
 

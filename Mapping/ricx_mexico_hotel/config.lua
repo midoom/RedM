@@ -5,7 +5,7 @@ Config.Prompts = {
 }
 
 Config.Texts = {
-    Enter = "Utiliser la porte",
+    Enter = "Use Door",
 }
 
 Config.Textures = {}

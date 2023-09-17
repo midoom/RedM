@@ -30,7 +30,7 @@ AddEventHandler("syn_construction:reward", function(quality,tasksdone,reward,tot
     end
     if tasksdone > totaltasks/2 then 
         local mult1 = tasksdone/totaltasks
-        local mult2 = quality * 0.30
+        local mult2 = quality * 0.01
         local pay = (reward * mult1) * mult2
         local Character = VorpCore.getUser(_source).getUsedCharacter
         local identifier = Character.identifier

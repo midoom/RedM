@@ -1,3 +1,4 @@
+
 local blips = {}
 local jobpeds = {}
 local inmenu = false
@@ -91,21 +92,21 @@ Citizen.CreateThread(function()
                             end
                             Wait(500)
                             TaskStartScenarioInPlace(player, GetHashKey(taskloc.wa), 30000, true, false, false, false)
-                            local testplayer = exports["syn_minigame"]:taskBar(5000,7)
+                            local testplayer = exports["syn_minigame"]:taskBar(4000,7)
                             local testplayer2
                             local testplayer3
                             local testplayer4
                             Wait(1000)
                             if testplayer == 100 then
-                                testplayer2 = exports["syn_minigame"]:taskBar(5000,7)
+                                testplayer2 = exports["syn_minigame"]:taskBar(3500,7)
                             end
                             Wait(1000)
                             if testplayer2 == 100 then
-                                testplayer3 = exports["syn_minigame"]:taskBar(5000,7)
+                                testplayer3 = exports["syn_minigame"]:taskBar(3200,7)
                             end
                             Wait(1000)
                             if testplayer3 == 100 then
-                                testplayer4 = exports["syn_minigame"]:taskBar(5000,7)
+                                testplayer4 = exports["syn_minigame"]:taskBar(2900,7)
                             end
                             if testplayer4 == 100 then 
                                 tasksdone = tasksdone + 1
@@ -249,6 +250,9 @@ Citizen.CreateThread( function()
     Citizen.Wait(0)
     end
 end)
+
+
+
 
 ----------------------------
 function keysx(table)

@@ -1,0 +1,59 @@
+Lto_newspapers
+Version 1.0
+Made by: Skate
+Credits to: Erratic and Steady
+-------------------------------
+
+Info:
+This news paper script is a Demo of what you can do with it.
+All the news inside is fake and not base on my server.
+The design is also a demo and everything inside can be change.
+---------------------------------------------------------------
+
+
+Pages Info:
+You need to make each pages with any photo editor !
+The default page size is: 691x900
+All the pages config are in the file (lto_newspaper\html\client.js) lines 115 +
+Right now by default all the pages link are stored on my discord.
+You need to change all the discord link to the pages you going to use for your server.
+You can store the page on a private discord channel or on any website.
+-------------------------------------------------------------------------------------------
+
+
+Page on Discord:
+Upload the pages to discord in a private channel
+Put the mouse on the picture
+Right clic and copy the link
+Paste the link in the client.js file of the script
+-------------------------------------
+
+
+
+Change the Table of contents:
+The line 121 (/* 2 index */) is the table of contents.
+The order of all pages is written like this: /* 1 cover */  /* 2 index */  /* 3 ad */ and /* 4 */ until the last pages...
+On the line: 122 content: if you want to change the page it open when you clic on the table of contents you need to change the (Index) for the page order.
+There is some info that can be change in the stylesheet.css if you change the name of the table of contents
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Rename the script:
+If you want to rename the script folder, you need to change the name of the script in the file client.js to match the new name you want.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+If you need help you can send me private message on discord.
+Sorry for my Bad English ! I Speak french.
+
+
+
+
+
+
+
+
+
