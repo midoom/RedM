@@ -1,0 +1,10 @@
+<Map>
+    <MapMeta Creator="Mr-Forestier"/>
+    <WorldSettings DisablePeds="false" Guarmahorizon="false" SnowCoverage="0" NoTrains="false" Weather="-1" Time_Hour="8" Time_Minutes="29" Time_Seconds="29" Time_Freezed="false" Player_And_Group_1_Relation="0" Player_And_Group_2_Relation="0" Player_And_Group_3_Relation="0" Player_And_Group_4_Relation="0" Player_And_Group_5_Relation="0" Player_And_Group_6_Relation="0" Group_1_And_2_Relation="0" Group_1_And_3_Relation="0" Group_1_And_4_Relation="0" Group_1_And_5_Relation="0" Group_2_And_3_Relation="0" Group_2_And_4_Relation="0" Group_2_And_5_Relation="0" Group_3_And_4_Relation="0" Group_3_And_5_Relation="0" Group_3_And_6_Relation="0" Group_4_And_5_Relation="0" Group_4_And_6_Relation="0" Group_5_And_6_Relation="0"/>
+    <Spawnpoint Set="true" Position_x="-348.98459" Position_y="698.58832" Position_z="116.6733"/>
+    <Object Hash="1664118379" Position_x="-347.10999" Position_y="693.97119" Position_z="116.3626" Rotation_x="0" Rotation_y="0" Rotation_z="13.9995" TextureVariation="0" Collision="true" Dynamic="false" LOD="50" BlipHash="0" BlipType="0"/>
+    <Object Hash="97710627" Position_x="-346.96371" Position_y="694.21301" Position_z="117.4948" Rotation_x="0" Rotation_y="0" Rotation_z="0" TextureVariation="0" Collision="true" Dynamic="false" LOD="30" BlipHash="0" BlipType="0"/>
+    <Object Hash="97710627" Position_x="-347.3667" Position_y="694.10822" Position_z="117.4932" Rotation_x="0" Rotation_y="0" Rotation_z="0" TextureVariation="0" Collision="true" Dynamic="false" LOD="30" BlipHash="0" BlipType="0"/>
+    <Object Hash="-353041477" Position_x="-347.0965" Position_y="693.9328" Position_z="117.4452" Rotation_x="13" Rotation_y="0" Rotation_z="14.5" TextureVariation="0" Collision="true" Dynamic="false" LOD="20" BlipHash="0" BlipType="0"/>
+    <Object Hash="1663122464" Position_x="-347.27509" Position_y="693.815" Position_z="117.4457" Rotation_x="-77.999702" Rotation_y="0" Rotation_z="13.0025" TextureVariation="0" Collision="true" Dynamic="false" LOD="20" BlipHash="0" BlipType="0"/>
+</Map>

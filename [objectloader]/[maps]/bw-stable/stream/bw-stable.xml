@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Map>
+    <MapMeta Creator="HaileyRoss"/>
+    <DeletedObject Hash="137945627" Position_x="-871.91522216797" Position_y="-1371.5328369141" Position_z="42.529712677002"/>
+    <Object Hash="998759471" Position_x="-872.91998291016" Position_y="-1368.8199462891" Position_z="42.540000915527" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-20.999996185303" Collision="true" Visible="true"/>
+    <Object Hash="998759471" Position_x="-874.28002929688" Position_y="-1368.7700195313" Position_z="42.540000915527" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="31.000003814697" Collision="true" Visible="true"/>
+    <Object Hash="998759471" Position_x="-873.55999755859" Position_y="-1371.3399658203" Position_z="42.540000915527" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-140.99998474121" Collision="true" Visible="true"/>
+    <Object Hash="68511322" Position_x="-872.78997802734" Position_y="-1370.0400390625" Position_z="43.569999694824" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-141.130859375" Collision="true" Visible="true"/>
+    <Object Hash="-939369416" Position_x="-873.52001953125" Position_y="-1370.5400390625" Position_z="43.053485870361" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-90.999984741211" Collision="true" Visible="true"/>
+</Map>

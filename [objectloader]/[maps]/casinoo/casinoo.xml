@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Map>
+	<MapMeta Creator="**Invalid**"/>
+	<Object Hash="-661418393" Position_x="3288.4599609375" Position_y="-1324.6181640625" Position_z="41.761123657227" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-179.03085327148" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.451171875" Position_y="-1317.8305664063" Position_z="41.778656005859" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="3.6490135192871" Collision="true" Visible="true"/>
+	<Object Hash="532045889" Position_x="3288.5434570313" Position_y="-1312.2510986328" Position_z="41.782974243164" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-5.0846309661865" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.4599609375" Position_y="-1324.6181640625" Position_z="41.761123657227" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-179.03086853027" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.451171875" Position_y="-1317.8305664063" Position_z="41.778656005859" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="3.6490135192871" Collision="true" Visible="true"/>
+	<Object Hash="532045889" Position_x="3288.4560546875" Position_y="-1308.8206787109" Position_z="41.794010162354" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-179.92358398438" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.451171875" Position_y="-1317.8305664063" Position_z="41.778656005859" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="3.6490135192871" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.4599609375" Position_y="-1324.6181640625" Position_z="41.761123657227" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-179.03085327148" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.451171875" Position_y="-1317.8305664063" Position_z="41.778656005859" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="3.6490135192871" Collision="true" Visible="true"/>
+	<Object Hash="-661418393" Position_x="3288.4599609375" Position_y="-1324.6181640625" Position_z="41.761123657227" Rotation_x="0.0" Rotation_y="0.0" Rotation_z="-179.03085327148" Collision="true" Visible="true"/>
+</Map>
