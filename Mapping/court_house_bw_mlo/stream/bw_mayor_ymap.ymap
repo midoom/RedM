@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>bw_mayor_ymap</name>
+  <parent/>
+  <flags value="0"/>
+  <contentFlags value="73"/>
+	<streamingExtentsMin x="-1017.635" y="-1410.891" z="-223.7824"/>
+	<streamingExtentsMax x="-579.7067" y="-982.2277" z="184.7805"/>
+	<entitiesExtentsMin x="-817.6345" y="-1210.891" z="-23.78244"/>
+	<entitiesExtentsMax x="-779.7067" y="-1182.228" z="-15.21954"/>
+  <entities>
+  <Item type="CEntityDef">
+    <archetypeName>bw_exterior</archetypeName>
+    <flags value="1572897"/>
+    <position x="-798.8" y="-1196.773" z="-20.4195"/>
+    <rotation w="0.707106" x="0.000000" y="0.000000" z="-0.707106"/>
+    <scaleXY value="1"/>
+    <scaleZ value="1"/>
+    <parentIndex value="-1"/>
+    <lodDist value="50"/>
+    <childLodDist value="500"/>
+    <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+    <numChildren value="0"/>
+    <ambientOcclusionMultiplier value="255"/>
+    <artificialAmbientOcclusion value="255"/>
+  </Item>
+    <Item type="CMloInstanceDef">
+    <archetypeName>bw_mayor_col</archetypeName>
+    <flags value="1572864"/>
+    <position x="-798.8" y="-1196.773" z="-20.4195"/>
+		<rotation w="0.707106" x="-0.000000" y="0.000000" z="-0.707106"/>
+    <scaleXY value="1.00000000"/>
+    <scaleZ value="1.00000000"/>
+    <parentIndex value="-1"/>
+    <lodDist value="50.00000000"/>
+    <childLodDist value="0.00000000"/>
+    <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+    <numChildren value="0"/>
+    <priorityLevel>PRI_REQUIRED</priorityLevel>
+    <extensions/>
+    <redm_loves_you_2158e9a42f04a7dc value="255"/>
+    <redm_loves_you_7dd29b0dd179bea5 value="255"/>
+    <tintValue value="0"/>
+    <groupId>0xA00FBCC5</groupId>
+    <floorId value="0"/>
+    <defaultEntitySets/>
+    <numExitPortals value="1"/>
+    <MLOInstflags value="0"/>
+    <redm_loves_you_cf303652f51cff2d value="0.00000000"/>
+  </Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries>
+    <Item>bw_mayor_col</Item>
+  </physicsDictionaries>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <RGBI/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name>bw_mayor_ymap</name>
+    <exportedBy/>
+    <owner/>
+    <time/>
+  </block>
+</CMapData>

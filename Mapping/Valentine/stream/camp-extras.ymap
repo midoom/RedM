@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="-1172.039978" y="-2132.869995" z="-353.520000"/>
+	<streamingExtentsMax x="-370.905212" y="-1332.062988" z="446.790001"/>
+	<entitiesExtentsMin x="-772.039978" y="-1732.869995" z="46.480000"/>
+	<entitiesExtentsMax x="-770.905212" y="-1732.062988" z="46.790001"/>
+	<entities>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair04x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-771.669983" y="-1732.869995" z="46.790001"/>
+			<rotation w="0.528910" x="-0.073175" y="-0.075557" z="-0.842135"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>mp007_p_nat_table46x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-770.905212" y="-1732.062988" z="46.480000"/>
+			<rotation w="0.534171" x="-0.072783" y="-0.098126" z="-0.836502"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_chair04x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-772.039978" y="-1732.119995" z="46.790001"/>
+			<rotation w="0.528102" x="-0.058955" y="-0.077959" z="-0.843537"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+	</entities>
+</CMapData>

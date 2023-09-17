@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapData>
+   <flags value="0" />
+   <contentFlags value="73" />
+	<streamingExtentsMin x="1215.843872" y="-1463.238892" z="-75.393997"/>
+	<streamingExtentsMax x="1525.347534" y="-1153.735229" z="234.109741"/>
+	<entitiesExtentsMin x="1365.843872" y="-1313.238892" z="74.606003"/>
+	<entitiesExtentsMax x="1375.347534" y="-1303.735229" z="84.109741"/>
+   <entities>
+       <Item type="CMloInstanceDef">
+         <archetypeName>rho_doctor_int</archetypeName>
+         <flags value="1572864" />
+         <position x="1370.595703" y="-1308.487061" z="79.357872"/>
+			<rotation w="0.965926" x="-0.000000" y="0.000000" z="-0.258819"/>
+         <scaleXY value="1.00000000" />
+         <scaleZ value="1.00000000" />
+         <parentIndex value="-1" />
+         <lodDist value="200.00000000" />
+         <childLodDist value="0.00000000" />
+         <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+         <numChildren value="0" />
+         <priorityLevel>PRI_REQUIRED</priorityLevel>
+         <extensions />
+         <redm_loves_you_2158e9a42f04a7dc value="255" />
+         <redm_loves_you_7dd29b0dd179bea5 value="255" />
+         <tintValue value="0" />
+         <groupId>0xA00FBCC5</groupId>
+         <floorId value="0" />
+         <defaultEntitySets />
+         <numExitPortals value="9" />
+         <MLOInstflags value="0" />
+         <redm_loves_you_cf303652f51cff2d value="0.00000000" />
+      </Item>
+   </entities>
+   <containerLods />
+   <boxOccluders />
+   <occludeModels />
+   <physicsDictionaries>
+      <Item>rho_doctor_int</Item>
+   </physicsDictionaries>
+   <instancedData>
+      <ImapLink />
+      <PropInstanceList />
+      <GrassInstanceList />
+   </instancedData>
+   <timeCycleModifiers />
+   <carGenerators />
+   <LODLightsSOA>
+      <direction />
+      <falloff />
+      <falloffExponent />
+      <timeAndStateFlags />
+      <hash />
+      <coneInnerAngle />
+      <coneOuterAngleOrCapExt />
+      <coronaIntensity />
+   </LODLightsSOA>
+   <DistantLODLightsSOA>
+      <position />
+      <RGBI />
+      <numStreetLights value="0" />
+      <category value="0" />
+   </DistantLODLightsSOA>
+   <block>
+      <version value="0" />
+      <flags value="0" />
+      <name>rho_doctor_int</name>
+      <exportedBy />
+      <owner />
+      <time />
+   </block>
+</CMapData>

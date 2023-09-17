@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapData>
+ <name>rho_01__long_0_edit</name>
+ <parent>rho_01_edit</parent>
+ <flags value="1" />
+ <contentFlags value="1" />
+ <streamingExtentsMin x="610.6456" y="-2079.56152" z="-711.677856" />
+ <streamingExtentsMax x="2210.64551" y="-479.561523" z="888.322144" />
+ <entitiesExtentsMin x="1352.0553" y="-1399.651" z="75.45389" />
+ <entitiesExtentsMax x="1467.20923" y="-1259.56152" z="108.322144" />
+ <entities>
+  <Item type="CEntityDef">
+   <archetypeName>p_wagonparked01x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4DC82E7C9D79A044" />
+   <position x="1392.13464" y="-1331.83167" z="76.89873" />
+   <rotation x="0" y="0" z="0.9880218" w="0.15431498" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="29" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>rho_01_vfx_helper_001</archetypeName>
+   <flags value="352321568" />
+   <id value="0x42E1B54643E28F7C" />
+   <position x="1410.64563" y="-1279.56152" z="88.32214" />
+   <rotation x="0" y="0" z="0" w="1" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="-1" />
+   <lodDist value="800" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_wagon01x</archetypeName>
+   <flags value="1572873" />
+   <id value="0x47C109D2836C94DA" />
+   <position x="1391.76648" y="-1309.95813" z="76.5759" />
+   <rotation x="-0.054181017" y="0" z="0" w="0.9985311" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="106" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_debris07x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4005684F70D2812A" />
+   <position x="1416.7196" y="-1319.41077" z="76.69922" />
+   <rotation x="-0.0356169939" y="0.03423099" z="0.7337118" w="0.677662849" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="93" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_wagon01x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4101DCFFDEC3A133" />
+   <position x="1397.45349" y="-1360.32874" z="79.77637" />
+   <rotation x="-0.03489899" y="0.0557429828" z="0.8778867" w="-0.4743308" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="145" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_debris07x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4EA950A7796942A8" />
+   <position x="1440.36707" y="-1368.57776" z="80.7039642" />
+   <rotation x="0" y="0" z="0.710823" w="-0.703371" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="162" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_debris07x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x445DA63481318976" />
+   <position x="1433.41345" y="-1355.70618" z="80.6857758" />
+   <rotation x="-0.0184849985" y="0.006880999" z="0.8940689" w="-0.447494924" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="162" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_rho_cottongin_03</archetypeName>
+   <flags value="1572864" />
+   <id value="0x41D2C149EA9DE484" />
+   <position x="1404.01953" y="-1324.26782" z="76.6538849" />
+   <rotation x="0" y="0" z="0.649448" w="0.760406" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="-1" />
+   <lodDist value="175" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_benchch01x</archetypeName>
+   <flags value="1573120" />
+   <id value="0x4E1187D370512346" />
+   <position x="1352.53564" y="-1381.44946" z="79.51732" />
+   <rotation x="0" y="0" z="-0.642787" w="0.766045" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="-1" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_benchch01x</archetypeName>
+   <flags value="1573120" />
+   <id value="0x46C8E12DAFD6D0B9" />
+   <position x="1354.11426" y="-1372.44385" z="79.51755" />
+   <rotation x="0" y="0" z="-0.642787" w="0.766045" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="-1" />
+   <lodDist value="-1" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_cordwood01x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x42FFFC96AF806E8A" />
+   <position x="1437.47754" y="-1282.7168" z="76.73496" />
+   <rotation x="0" y="0" z="0.6065639" w="0.795034766" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="43" />
+   <lodDist value="165" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_cordwood01x</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4B5ABA16AAE10582" />
+   <position x="1465.9082" y="-1373.61755" z="77.72085" />
+   <rotation x="0" y="0" z="0.9746854" w="-0.223581076" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="44" />
+   <lodDist value="165" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4807E65B31889A73" />
+   <position x="1365.01978" y="-1380.3457" z="78.23876" />
+   <rotation x="0" y="0" z="0.7032093" w="0.710983038" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x45A137EAAEED15BC" />
+   <position x="1364.92468" y="-1383.98779" z="78.23876" />
+   <rotation x="0" y="0" z="0.733552158" w="0.6796332" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4D48A5D935F1464C" />
+   <position x="1365.53943" y="-1375.93909" z="77.99947" />
+   <rotation x="0" y="0" z="0.733552158" w="0.6796332" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572873" />
+   <id value="0x4BF841BA4137F134" />
+   <position x="1375.61646" y="-1398.19873" z="78.15156" />
+   <rotation x="0" y="0" z="0.425335" w="0.905036" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4913198DF59C154B" />
+   <position x="1370.74841" y="-1392.7406" z="78.15156" />
+   <rotation x="0" y="0" z="0.3878081" w="0.9217402" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x46A70A6B625E4282" />
+   <position x="1373.22034" y="-1395.48047" z="78.15156" />
+   <rotation x="0" y="0" z="0.417514235" w="0.9086704" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4432CD297ED259B0" />
+   <position x="1368.25952" y="-1390.06616" z="78.15156" />
+   <rotation x="0" y="0" z="0.407320231" w="0.913285434" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x4313C4926FAD34D3" />
+   <position x="1365.97571" y="-1387.19116" z="78.15156" />
+   <rotation x="0" y="0" z="0.4506982" w="0.8926764" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+  <Item type="CEntityDef">
+   <archetypeName>p_fence_picket_01_rhoa</archetypeName>
+   <flags value="1572872" />
+   <id value="0x46F5BD2F15FE5F8C" />
+   <position x="1365.81567" y="-1372.29712" z="77.96662" />
+   <rotation x="0" y="0" z="0.733552158" w="0.6796332" />
+   <scaleXY value="1" />
+   <scaleZ value="1" />
+   <parentIndex value="36" />
+   <lodDist value="163" />
+   <childLodDist value="0" />
+   <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+   <numChildren value="0" />
+   <priorityLevel>PRI_REQUIRED</priorityLevel>
+   <extensions />
+   <powerGridId value="0" />
+   <tintValue value="0" />
+   <GtyHDFA_0x0DC5F270 value="255" />
+   <kXvVXMA_0x540CA436 value="255" />
+  </Item>
+ </entities>
+ <containerLods />
+ <boxOccluders />
+ <occludeModels />
+ <physicsDictionaries />
+ <instancedData type="rage__fwInstancedMapData">
+  <ImapLink />
+  <PropInstanceList />
+  <GrassInstanceList />
+ </instancedData>
+ <timeCycleModifiers />
+ <awOyxCA_0x8471928B />
+ <dakdTAA_0x4D4A0635 />
+ <carGenerators />
+ <LODLightsSOA type="CLODLight">
+  <direction />
+  <falloff />
+  <falloffExponent />
+  <timeAndStateFlags />
+  <hash />
+  <coneInnerAngle />
+  <coneOuterAngleOrCapExt />
+  <coronaIntensity />
+  <XVPnEEA_0xFFD167D6 />
+ </LODLightsSOA>
+ <DistantLODLightsSOA type="CDistantLODLight">
+  <position />
+  <IyySyoA_0x94720DEC />
+  <intensity />
+  <numStreetLights value="0" />
+  <category value="0" />
+  <powerGridId />
+  <hash />
+ </DistantLODLightsSOA>
+ <block type="CBlockDesc">
+  <version value="0" />
+  <flags value="0" />
+  <name />
+  <exportedBy />
+  <owner />
+  <time />
+ </block>
+</CMapData>

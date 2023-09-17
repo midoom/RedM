@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<CMapData>
+  <flags value="2"/>
+  <contentFlags value="65"/>
+  <streamingExtentsMin x="1860.8093" y="534.26343" z="-318.108101"/>
+  <streamingExtentsMax x="2665.2686" y="1335.68018" z="482.928299"/>
+  <entitiesExtentsMin x="2260.8093" y="934.26343" z="81.891899"/>
+  <entitiesExtentsMax x="2265.2686" y="935.68018" z="82.928299"/>
+  <entities>
+    <Item type="CEntityDef">
+      <archetypeName>s_hornetnest_01x</archetypeName>
+      <flags value="1572865"/>
+      <position x="2264.4814" y="935.13788" z="82.5242"/>
+      <rotation w="0.96933" x="0" y="0" z="-0.24576"/>
+      <scaleXY value="1"/>
+      <scaleZ value="1"/>
+      <parentIndex value="-1"/>
+      <lodDist value="500"/>
+      <childLodDist value="500"/>
+      <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+      <numChildren value="0"/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>s_hornetnest_01x</archetypeName>
+      <flags value="1572865"/>
+      <position x="2265.2686" y="934.26343" z="82.752701"/>
+      <rotation w="0.96933" x="0" y="0" z="-0.24576"/>
+      <scaleXY value="1"/>
+      <scaleZ value="1"/>
+      <parentIndex value="-1"/>
+      <lodDist value="500"/>
+      <childLodDist value="500"/>
+      <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+      <numChildren value="0"/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>s_hornetnest_01x</archetypeName>
+      <flags value="1572865"/>
+      <position x="2260.8093" y="934.87311" z="81.891899"/>
+      <rotation w="0.96933" x="0" y="0" z="-0.24576"/>
+      <scaleXY value="1"/>
+      <scaleZ value="1"/>
+      <parentIndex value="-1"/>
+      <lodDist value="500"/>
+      <childLodDist value="500"/>
+      <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+      <numChildren value="0"/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+    </Item>
+    <Item type="CEntityDef">
+      <archetypeName>s_hornetnest_01x</archetypeName>
+      <flags value="1572865"/>
+      <position x="2264.4229" y="935.68018" z="82.928299"/>
+      <rotation w="0.96933" x="0" y="0" z="-0.24576"/>
+      <scaleXY value="1"/>
+      <scaleZ value="1"/>
+      <parentIndex value="-1"/>
+      <lodDist value="500"/>
+      <childLodDist value="500"/>
+      <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+      <numChildren value="0"/>
+      <ambientOcclusionMultiplier value="255"/>
+      <artificialAmbientOcclusion value="255"/>
+    </Item>
+  </entities>
+</CMapData>

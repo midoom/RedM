@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapData>
+  <name>mlo_medical_ymap</name>
+  <parent/>
+  <flags value="0"/>
+  <contentFlags value="73"/>
+	<streamingExtentsMin x="-998.9503" y="-1787.77478" z="-144.248734"/>
+	<streamingExtentsMax x="-566.331665" y="-1364.01355" z="272.148743"/>
+	<entitiesExtentsMin x="-798.9503" y="-1587.77478" z="55.75127"/>
+	<entitiesExtentsMax x="-766.331665" y="-1564.01355" z="72.14873"/>
+  <entities>
+	<Item type="CEntityDef">
+		<archetypeName>rs_medical</archetypeName>
+		<flags value="1572897"/>
+		<position x="-782.65" y="-1574.54" z="63.95"/>
+		<rotation w="1.000000" x="0.000000" y="0.000000" z="0.000000"/>
+		<scaleXY value="1"/>
+		<scaleZ value="1"/>
+		<parentIndex value="-1"/>
+		<lodDist value="500"/>
+		<childLodDist value="500"/>
+		<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+		<numChildren value="0"/>
+		<ambientOcclusionMultiplier value="255"/>
+		<artificialAmbientOcclusion value="255"/>
+	</Item>
+    <Item type="CMloInstanceDef">
+      <archetypeName>mlo_medical_col</archetypeName>
+      <flags value="1572864"/>
+		<position x="-782.65" y="-1574.54" z="63.95"/>
+		<rotation w="1.000000" x="0.000000" y="0.000000" z="0.000000"/>
+      <scaleXY value="1.00000000"/>
+      <scaleZ value="1.00000000"/>
+      <parentIndex value="-1"/>
+      <lodDist value="200.00000000"/>
+      <childLodDist value="0.00000000"/>
+      <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+      <numChildren value="0"/>
+      <priorityLevel>PRI_REQUIRED</priorityLevel>
+      <extensions/>
+      <redm_loves_you_2158e9a42f04a7dc value="255"/>
+      <redm_loves_you_7dd29b0dd179bea5 value="255"/>
+      <tintValue value="0"/>
+      <groupId>0xA00FBCC5</groupId>
+      <floorId value="0"/>
+      <defaultEntitySets/>
+      <numExitPortals value="19"/>
+      <MLOInstflags value="0"/>
+      <redm_loves_you_cf303652f51cff2d value="0.00000000"/>
+    </Item>
+  </entities>
+  <containerLods/>
+  <boxOccluders/>
+  <occludeModels/>
+  <physicsDictionaries>
+    <Item>mlo_medical_col</Item>
+  </physicsDictionaries>
+  <instancedData>
+    <ImapLink/>
+    <PropInstanceList/>
+    <GrassInstanceList/>
+  </instancedData>
+  <timeCycleModifiers/>
+  <carGenerators/>
+  <LODLightsSOA>
+    <direction/>
+    <falloff/>
+    <falloffExponent/>
+    <timeAndStateFlags/>
+    <hash/>
+    <coneInnerAngle/>
+    <coneOuterAngleOrCapExt/>
+    <coronaIntensity/>
+  </LODLightsSOA>
+  <DistantLODLightsSOA>
+    <position/>
+    <RGBI/>
+    <numStreetLights value="0"/>
+    <category value="0"/>
+  </DistantLODLightsSOA>
+  <block>
+    <version value="0"/>
+    <flags value="0"/>
+    <name>mlo_medical_ymap</name>
+    <exportedBy/>
+    <owner/>
+    <time/>
+  </block>
+</CMapData>

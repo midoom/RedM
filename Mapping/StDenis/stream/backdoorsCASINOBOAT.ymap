@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="2494.823242" y="-1828.421387" z="-356.976978"/>
+	<streamingExtentsMax x="3299.868652" y="-1023.941528" z="446.579384"/>
+	<entitiesExtentsMin x="2894.823242" y="-1428.421387" z="43.023022"/>
+	<entitiesExtentsMax x="2899.868652" y="-1423.941528" z="46.579384"/>
+	<entities>
+		<Item type="CEntityDef">
+			<archetypeName>p_doorriverboat01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2899.046387" y="-1423.941528" z="46.579384"/>
+			<rotation w="0.824126" x="0.000000" y="-0.000000" z="-0.566406"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_doorriverboat01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2894.823242" y="-1428.421387" z="46.570000"/>
+			<rotation w="0.963630" x="0.000000" y="-0.000000" z="-0.267238"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_doorriverboat01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2899.868652" y="-1426.527832" z="43.023022"/>
+			<rotation w="0.414693" x="-0.000000" y="0.000000" z="0.909961"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>p_doorriverboat01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2898.448730" y="-1428.213379" z="43.024021"/>
+			<rotation w="0.906308" x="0.000000" y="-0.000000" z="-0.422618"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+	</entities>
+</CMapData>

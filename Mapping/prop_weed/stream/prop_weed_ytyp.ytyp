@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CMapTypes>
+  <extensions />
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="100" />
+      <flags value="32" />
+      <specialAttribute value="0" />
+      <bbMin x="-0.6220703" y="-0.6201172" z="0.0000000" />
+      <bbMax x="0.5961914" y="0.6181641" z="1.8818361" />
+      <bsCentre x="-0.0129395" y="-0.0009766" z="0.9409180" />
+      <bsRadius value="1.28051" />
+      <hdTextureDist value="133238,04" />
+      <name>prop_weed_01</name>
+      <textureDictionary>prop_weed_tex</textureDictionary>
+      <clipDictionary />
+      <drawableDictionary />
+      <physicsDictionary />
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_weed_01</assetName>
+      <extensions />
+    </Item>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="100" />
+      <flags value="32" />
+      <specialAttribute value="0" />
+      <bbMin x="-0.5000000" y="-0.4135742" z="0.0000000" />
+      <bbMax x="0.5004883" y="0.4736328" z="1.1586910" />
+      <bsCentre x="0.0002441" y="0.0300293" z="0.5793455" />
+      <bsRadius value="0.884686" />
+      <hdTextureDist value="920138,44" />
+      <name>prop_weed_02</name>
+      <textureDictionary>prop_weed_tex</textureDictionary>
+      <clipDictionary />
+      <drawableDictionary />
+      <physicsDictionary />
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>prop_weed_02</assetName>
+      <extensions />
+    </Item>
+  </archetypes>
+  <name>prop_weed</name>
+  <dependencies />
+  <compositeEntityTypes />
+  <CreatedBy>Syntonum</CreatedBy>
+</CMapTypes>

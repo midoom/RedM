@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapTypes>
+  <extensions />
+  <archetypes>
+  <Item type="CBaseArchetypeDef">
+    <guid value="0"/>
+    <lodDist value="147.00000000"/>
+    <flags value="0" />
+    <loadFlags value="0" />
+    <specialAttribute value="0" />
+    <bbMin x="-14.1178074" y="-19.0932693" z="-3.36293864"/>
+    <bbMax x="14.5452127" y="18.8345032" z="5.19996357"/>
+    <bsCentre x="0.213702679" y="-0.129383087" z="0.918512464"/>
+    <bsRadius value="24.1526814"/>
+    <hdTextureDist value="83.8283" />
+    <name>bw_exterior</name>
+    <textureDictionary>bw_mayor_tex</textureDictionary>
+    <clipDictionary />
+    <drawableDictionary />
+    <physicsDictionary>bw_exterior</physicsDictionary>
+    <assetType>ASSET_TYPE_DRAWABLE</assetType>
+    <assetName>bw_exterior</assetName>
+    <extensions />
+    <redm_loves_you_a68fd88a5afa0b22>0xAD1EED63</redm_loves_you_a68fd88a5afa0b22>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+    <guid value="0"/>
+    <lodDist value="147.00000000"/>
+    <flags value="0" />
+    <loadFlags value="0" />
+    <specialAttribute value="0" />
+    <bbMin x="-13.724259" y="-18.258438" z="-2.4250162"/>
+    <bbMax x="13.992559" y="18.450499" z="4.0757484"/>
+    <bsCentre x="0.13415003" y="0.096030235" z="0.82536614"/>
+    <bsRadius value="232272.91"/>
+    <hdTextureDist value="83.8283"/>
+    <name>bw_mayor_shell</name>
+    <textureDictionary>bw_mayor_tex</textureDictionary>
+    <clipDictionary />
+    <drawableDictionary />
+    <physicsDictionary />
+    <assetType>ASSET_TYPE_DRAWABLE</assetType>
+    <assetName>bw_mayor_shell</assetName>
+    <extensions />
+    <redm_loves_you_a68fd88a5afa0b22>0xAD1EED63</redm_loves_you_a68fd88a5afa0b22>
+  </Item>
+  <Item type="CMloArchetypeDef">
+      <UNK_MEMBER_0xC067A638 value="0"/>
+      <lodDist value="109.501" />
+      <flags value="0" />
+      <UNK_MEMBER_0x8F215E15 value="0"/>
+	    <loadFlags value="0" />
+      <specialAttribute value="0" />
+      <bbMin x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bbMax x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bsCentre x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bsRadius value="0.00000000"/>
+      <hdTextureDist value="5.00000000"/>
+      <name>bw_mayor_col</name>
+      <textureDictionary/>
+      <clipDictionary />
+      <drawableDictionary />
+      <physicsDictionary>bw_mayor_col</physicsDictionary>
+      <assetType>ASSET_TYPE_ASSETLESS</assetType>
+      <assetName/>
+      <extensions />
+      <guid value="0"/>
+      <UNK_MEMBER_0x07D164A8>0x2BE5C1FB</UNK_MEMBER_0x07D164A8>
+	    <mloFlags value="0"/>
+      <entities>
+	    	<Item type="CEntityDef">
+          <archetypeName>bw_mayor_shell</archetypeName>
+          <flags value="68681728"/>
+          <position x="0.00000000" y="0.00000000" z="0.00000000"/>
+          <rotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <scaleXY value="1.00000000"/>
+          <scaleZ value="1.00000000"/>
+          <parentIndex value="-1"/>
+          <lodDist value="-1.00000000"/>
+          <childLodDist value="0.00000000"/>
+          <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+          <numChildren value="0"/>
+          <powerGridId value="0"/>
+          <priorityLevel>PRI_REQUIRED</priorityLevel>
+          <extensions/>
+          <tintValue value="0" />
+          <redm_loves_you_2158e9a42f04a7dc value="255" />
+          <redm_loves_you_7dd29b0dd179bea5 value="255" />
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door12x</archetypeName>
+          <flags value="1572865"/>
+          <position x="1.200" y="-5.940" z="-2.410"/>
+          <rotation w="0.000000" x="0.000000" y="0.000000" z="0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door12x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-0.9925" y="-5.940" z="-2.410"/>
+          <rotation w="1.000000" x="0.000000" y="0.000000" z="-0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door12x</archetypeName>
+          <flags value="1572865"/>
+          <position x="1.075" y="11.8000" z="-2.410"/>
+          <rotation w="0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door12x</archetypeName>
+          <flags value="1572865"/>
+          <position x="1.075" y="13.9885" z="-2.410"/>
+          <rotation w="-0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door62x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-6.265" y="-1.1425" z="-2.410"/>
+          <rotation w="0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door62x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-6.200" y="1.0575" z="-2.410"/>
+          <rotation w="-0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door_val_jail_cell01x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-9.145" y="-2.6450" z="-2.410"/>
+          <rotation w="0.000000" x="0.000000" y="0.000000" z="0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door_val_jail_cell01x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-10.220" y="2.5675" z="-2.410"/>
+          <rotation w="1.000000" x="0.000000" y="0.000000" z="-0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+	    </entities>
+      <rooms>
+        <Item>
+          <name>limbo</name>
+          <bbMin x="-13.72430000" y="-18.25840000" z="-2.42502000"/>
+          <bbMax x="13.99260000" y="18.45050000" z="4.07575000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="1"/>
+          <floorId value="0"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+            0
+          </attachedObjects>
+          <redm_loves_you_bea305dc5335a8ff />
+        </Item>
+	    	<Item>
+          <name>main</name>
+          <bbMin x="13.7658000" y="5.93795000" z="-2.42215000"/>
+          <bbMax x="-6.31224000" y="-5.87929000" z="4.07575000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="4"/>
+          <floorId value="1"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>court</name>
+          <bbMin x="6.55076000" y="-18.1687000" z="-2.42216000"/>
+          <bbMax x="-6.14966000" y="-5.87929000" z="2.66376000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="1"/>
+          <floorId value="2"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>cells</name>
+          <bbMin x="-6.31224000" y="5.93795000" z="-2.42215000"/>
+          <bbMax x="-13.5044000" y="-5.88314000" z="2.63508000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="1"/>
+          <floorId value="3"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          7
+          8
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>office</name>
+          <bbMin x="0.981104000" y="18.2810000" z="-2.42215000"/>
+          <bbMax x="-6.118290000" y="6.61047100" z="2.67657000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="1"/>
+          <floorId value="4"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>hallway</name>
+          <bbMin x="5.22823000" y="5.93795000" z="-2.42215000"/>
+          <bbMax x="0.981104000" y="18.2811000" z="2.52521000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>ann_mine_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="2"/>
+          <floorId value="5"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+	  </rooms>
+	  <portals>
+      <Item>
+        <roomFrom value="1"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          13.76705200  0.99365270 -2.42153480
+          13.76705200  0.99365270  0.06105417
+          13.76705200 -0.89175020  0.06105417
+          13.76705200 -0.89175020 -2.42153480
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="2"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -0.99011207 -5.87926150 -2.42215850
+          -0.99011207 -5.87926150 -0.19726616
+          1.18993880 -5.87926150 -0.19726616
+          1.18993880 -5.87926150 -2.42215850
+        </corners>
+        <attachedObjects content="int_array">
+        1
+        2
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="3"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -6.31223600 1.04440870 -2.42215850
+          -6.31223600 1.04440750 -0.19726998
+          -6.31223600 -1.12928140 -0.19726592
+          -6.31223600 -1.12927900 -2.42215850
+        </corners>
+        <attachedObjects content="int_array">
+        5
+        6
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="4"/>
+        <roomTo value="5"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          0.98110410 13.98834600 -2.42215420
+          0.98110410 13.98834600 -0.19726545
+          0.98110410 11.80721800 -0.19726545
+          0.98110410 11.80721900 -2.42215420
+        </corners>
+        <attachedObjects content="int_array">
+        3
+        4
+        </attachedObjects>
+      </Item>
+        <Item>
+        <roomFrom value="5"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          1.80918000 5.93795000 -2.42215000
+          4.62232000 5.93795000 -2.42215000
+          4.65008000 5.93795000 0.89510900
+          1.78195000 5.93795000 0.89510900
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+	  </portals>
+	  <entitySets/>
+	  <timeCycleModifiers/>
+	  <redm_loves_you_a1eeea498c70af98/>
+      <redm_loves_you_4f772a6e01dcf2fd/>
+      <redm_loves_you_19e1250a833f3e04>
+        <redm_loves_you_4b0e6c8bf963c46b>
+          <centerAndRadius x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000"/>
+        </redm_loves_you_4b0e6c8bf963c46b>
+        <flags/>
+      </redm_loves_you_19e1250a833f3e04>
+      <redm_loves_you_525e3103a5fdd7ca value="false"/>
+    </Item>	
+ </archetypes>
+ <name>bw_mayor_ytyp</name>
+ <dependencies />
+ <compositeEntityTypes itemType="CCompositeEntityType" />
+</CMapTypes>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="-553.861847" y="139.414551" z="-285.598251"/>
+	<streamingExtentsMax x="246.138153" y="939.414551" z="514.401749"/>
+	<entitiesExtentsMin x="-153.861847" y="539.414551" z="114.401749"/>
+	<entitiesExtentsMax x="-153.861847" y="539.414551" z="114.401749"/>
+	<entities>
+		<Item type="CEntityDef">
+			<archetypeName>mp001_p_mp_door01x</archetypeName>
+			<flags value="1572865"/>
+			<position x="-153.861847" y="539.414551" z="114.401749"/>
+			<rotation w="0.416455" x="0.000000" y="-0.000000" z="-0.909156"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+	</entities>
+</CMapData>

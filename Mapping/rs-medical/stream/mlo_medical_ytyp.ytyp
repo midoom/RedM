@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapTypes>
+  <extensions />
+  <archetypes>
+  <Item type="CBaseArchetypeDef">
+    <guid value="0"/>
+    <lodDist value="147.00000000"/>
+    <flags value="0" />
+    <loadFlags value="0" />
+    <specialAttribute value="0" />
+    <bbMin x="-16.30029000" y="-13.23477000" z="-8.19873000"/>
+    <bbMax x="16.31833000" y="10.52654000" z="8.19873000"/>
+    <bsCentre x="0.00902180" y="-1.35411700" z="0.00000000"/>
+    <bsRadius value="21.77990000"/>
+    <hdTextureDist value="83.8283" />
+    <name>rs_medical</name>
+    <textureDictionary>mlo_medical_mat</textureDictionary>
+    <clipDictionary />
+    <drawableDictionary />
+    <physicsDictionary>rs_medical</physicsDictionary>
+    <assetType>ASSET_TYPE_DRAWABLE</assetType>
+    <assetName>rs_medical</assetName>
+    <extensions />
+    <redm_loves_you_a68fd88a5afa0b22>0xAD1EED63</redm_loves_you_a68fd88a5afa0b22>
+  </Item>
+  <Item type="CBaseArchetypeDef">
+    <guid value="0"/>
+    <lodDist value="147.00000000"/>
+    <flags value="0" />
+    <loadFlags value="0" />
+    <specialAttribute value="0" />
+    <bbMin x="-16.30029000" y="-13.23477000" z="-8.19873000"/>
+    <bbMax x="16.31833000" y="10.52654000" z="8.19873000"/>
+    <bsCentre x="0.00902180" y="-1.35411700" z="0.00000000"/>
+    <bsRadius value="217799.00000000"/>
+    <hdTextureDist value="83.8283" />
+    <name>mlo_medical_shell</name>
+    <textureDictionary>mlo_medical_mat</textureDictionary>
+    <clipDictionary />
+    <drawableDictionary />
+    <physicsDictionary />
+    <assetType>ASSET_TYPE_DRAWABLE</assetType>
+    <assetName>mlo_medical_shell</assetName>
+    <extensions />
+    <redm_loves_you_a68fd88a5afa0b22>0xAD1EED63</redm_loves_you_a68fd88a5afa0b22>
+  </Item>
+  <Item type="CMloArchetypeDef">
+      <lodDist value="109.501" />
+      <flags value="0" />
+	    <loadFlags value="0" />
+      <specialAttribute value="0" />
+      <bbMin x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bbMax x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bsCentre x="0.00000000" y="0.00000000" z="0.00000000"/>
+      <bsRadius value="0.00000000"/>
+      <hdTextureDist value="5.00000000"/>
+      <name>mlo_medical_col</name>
+      <textureDictionary/>
+      <clipDictionary />
+      <drawableDictionary />
+      <physicsDictionary>mlo_medical_col</physicsDictionary>
+      <assetType>ASSET_TYPE_ASSETLESS</assetType>
+      <assetName/>
+      <extensions />
+	    <mloFlags value="0"/>
+      <entities>
+	    	<Item type="CEntityDef">
+          <archetypeName>mlo_medical_shell</archetypeName>
+          <flags value="1572864"/>
+          <position x="0.00000000" y="0.00000000" z="0.00000000"/>
+          <rotation x="0.00000000" y="0.00000000" z="0.00000000" w="1.00000000"/>
+          <scaleXY value="1.00000000"/>
+          <scaleZ value="1.00000000"/>
+          <parentIndex value="-1"/>
+          <lodDist value="-1.00000000"/>
+          <childLodDist value="0.00000000"/>
+          <lodLevel>LODTYPES_DEPTH_ORPHANHD</lodLevel>
+          <numChildren value="0"/>
+          <powerGridId value="0"/>
+          <priorityLevel>PRI_REQUIRED</priorityLevel>
+          <extensions/>
+          <tintValue value="0" />
+          <redm_loves_you_2158e9a42f04a7dc value="255" />
+          <redm_loves_you_7dd29b0dd179bea5 value="255" />
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door11x_beecher</archetypeName>
+          <flags value="1572865"/>
+          <position x="4.843" y="0.307" z="-5.3"/>
+          <rotation w="0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door11x_beecher</archetypeName>
+          <flags value="1572865"/>
+          <position x="0.419" y="-2.881" z="-5.3"/>
+          <rotation w="1.000000" x="0.000000" y="0.000000" z="1.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door11x_beecher</archetypeName>
+          <flags value="1572865"/>
+          <position x="-6.324" y="-2.881" z="-5.3"/>
+          <rotation w="1.000000" x="0.000000" y="0.000000" z="1.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door11x_beecher</archetypeName>
+          <flags value="1572897"/>
+          <position x="-8.935" y="0.03" z="-5.3"/>
+          <rotation w="0.707107" x="0.000000" y="0.000000" z="0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door09x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-3.246" y="3.006" z="-5.3"/>
+          <rotation w="1.000000" x="0.000000" y="0.000000" z="1.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door09x</archetypeName>
+          <flags value="1572865"/>
+          <position x="-1.033" y="3.006" z="-5.3"/>
+          <rotation w="0.000000" x="0.000000" y="0.000000" z="0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door09x</archetypeName>
+          <flags value="1572897"/>
+          <position x="-14.72" y="-6.906" z="-5.3"/>
+          <rotation w="0.707107" x="0.000000" y="-0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door09x</archetypeName>
+          <flags value="1572865"/>
+          <position x="1.945" y="-8.801" z="-1.293"/>
+          <rotation w="0.000000" x="0.000000" y="0.000000" z="0.000000"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+        <Item type="CEntityDef">
+          <archetypeName>p_door10x</archetypeName>
+          <flags value="1572865"/>
+          <position x="8.83" y="-4.23" z="-5.3"/>
+          <rotation w="-0.707107" x="0.000000" y="0.000000" z="-0.707107"/>
+          <scaleXY value="1"/>
+          <scaleZ value="1"/>
+          <parentIndex value="-1"/>
+          <lodDist value="500"/>
+          <childLodDist value="500"/>
+          <lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+          <numChildren value="0"/>
+          <ambientOcclusionMultiplier value="255"/>
+          <artificialAmbientOcclusion value="255"/>
+        </Item>
+	    </entities>
+      <rooms>
+        <Item>
+          <name>limbo</name>
+          <bbMin x="-16.30029000" y="-13.23477000" z="-8.19873000"/>
+          <bbMax x="16.31833000" y="10.52654000" z="8.19873000"/>
+          <blend value="1.00000000"/>
+          <timecycleName/>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="19"/>
+          <floorId value="0"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+            0
+          </attachedObjects>
+          <redm_loves_you_bea305dc5335a8ff />
+        </Item>
+	    	<Item>
+          <name>main</name>
+          <bbMin x="4.90400000" y="3.03700000" z="-5.30500000"/>
+          <bbMax x="-8.87400000" y="-2.94200000" z="-1.43200000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="8"/>
+          <floorId value="1"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>first_left</name>
+          <bbMin x="8.82400100" y="-2.83200000" z="-5.30500000"/>
+          <bbMax x="4.90400000" y="3.03700000" z="-1.43200000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="3"/>
+          <floorId value="2"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>first_front_left</name>
+          <bbMin x="2.96700000" y="-8.79800100" z="-5.30500000"/>
+          <bbMax x="-4.26000000" y="-2.94200000" z="-1.43200000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="2"/>
+          <floorId value="3"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>first_front_right</name>
+          <bbMin x="-4.41000000" y="-8.79800100" z="-5.30500000"/>
+          <bbMax x="-8.87400000" y="-2.94200000" z="-1.43200000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="2"/>
+          <floorId value="4"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>first_right</name>
+          <bbMin x="-8.87400000" y="3.03700000" z="-5.30500000"/>
+          <bbMax x="-14.72600000" y="-8.79800100" z="-2.28500000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="5"/>
+          <floorId value="5"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>first_stairs</name>
+          <bbMin x="4.81900000" y="-8.79800100" z="-5.30500000"/>
+          <bbMax x="3.07700000" y="-2.94200000" z="-1.32800000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="2"/>
+          <floorId value="6"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>second_main</name>
+          <bbMin x="-8.87400000" y="-8.79800100" z="-1.32800000"/>
+          <bbMax x="4.90400000" y="-2.94200000" z="1.51800000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="7"/>
+          <floorId value="7"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+        <Item>
+          <name>apothek</name>
+          <bbMin x="8.82400100" y="-2.94200000" z="-5.30500000"/>
+          <bbMax x="4.90400000" y="-8.79800100" z="-1.43200000"/>
+          <blend value="1.00000000"/>
+          <timecycleName>arm_bank_int</timecycleName>
+          <secondaryTimecycleName/>
+          <flags value="32"/>
+          <portalCount value="2"/>
+          <floorId value="8"/>
+          <exteriorVisibiltyDepth value="-1"/>
+          <attachedObjects content="int_array">
+          </attachedObjects>
+        </Item>
+	  </rooms>
+	  <portals>
+      <Item>
+        <roomFrom value="1"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -3.52300000 3.03700000 -5.30500000
+          -3.52300000 3.03700000 -2.91300000
+          -0.77300000 3.03700000 -2.91300000
+          -0.77300000 3.03700000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          5
+          6
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="1"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          1.25700000 3.03700000 -4.37100000
+          1.25700000 3.03700000 -2.91300000
+          3.64900000 3.03700000 -2.91300000
+          3.64900000 3.03700000 -4.37100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="1"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -7.94900000 3.03700000 -4.37100000
+          -7.94900000 3.03700000 -2.91300000
+          -5.54500000 3.03700000 -2.91300000
+          -5.54500000 3.03700000 -4.37100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="2"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          4.86200000 0.13100000 -5.30500000
+          4.86200000 0.15300000 -2.92700000
+          4.86200000 1.60300000 -2.92700000
+          4.86200000 1.58100000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          1
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="2"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          5.68300000 3.03700000 -4.35100000
+          5.68300000 3.03700000 -2.93700000
+          8.05800000 3.03700000 -2.93700000
+          8.05800000 3.03700000 -4.35100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="2"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          8.82400100 2.13300000 -4.36900000
+          8.82400100 2.13300000 -2.91500000
+          8.82400100 -0.26500000 -2.91500000
+          8.82400100 -0.26500000 -4.36900000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="3"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          0.25200000 -2.88700000 -5.30500000
+          0.25200000 -2.88700000 -2.97700000
+          1.68100000 -2.88700000 -2.97700000
+          1.68100000 -2.88700000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          2
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="3"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -0.90100000 -8.79800100 -4.36300000
+          -0.90100000 -8.79800100 -2.91700000
+          -3.31100000 -8.79800100 -2.91700000
+          -3.31100000 -8.79800100 -4.36300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="4"/>
+        <roomTo value="1"/>
+        <flags value="64"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="0.30000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -6.48100000 -2.88700000 -5.30500000
+          -6.48100000 -2.88700000 -2.97700000
+          -5.06200000 -2.88700000 -2.97700000
+          -5.06200000 -2.88700000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          3
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="4"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -7.08700000 -8.79800100 -4.36300000
+          -7.08700000 -8.79800100 -2.91700000
+          -8.16500000 -8.79800100 -2.91700000
+          -8.16500000 -8.79800100 -4.36300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="5"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -8.94100000 0.19300000 -5.30500000
+          -8.94100000 0.19300000 -2.91300000
+          -8.94100000 -1.22500000 -2.91300000
+          -8.94100000 -1.22500000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          4
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="5"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -14.72600000 -7.09500000 -5.30500000
+          -14.72600000 -7.09500000 -2.92200000
+          -14.72600000 -5.63200000 -2.92200000
+          -14.72600000 -5.63200000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          7
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="5"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -14.72600000 -4.51900000 -4.36300000
+          -14.72600000 -4.51900000 -2.92200000
+          -14.72600000 -2.10000000 -2.92200000
+          -14.72600000 -2.10000000 -4.36300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="5"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -14.72600000 -0.60100000 -4.36300000
+          -14.72600000 -0.60100000 -2.92200000
+          -14.72600000 1.81200000 -2.92200000
+          -14.72600000 1.81200000 -4.36300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="5"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -13.33800000 3.03700000 -4.37100000
+          -13.33800000 3.03700000 -2.91300000
+          -10.93100000 3.03700000 -2.91300000
+          -10.93100000 3.03700000 -4.37100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="6"/>
+        <roomTo value="1"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          3.07700000 -2.88700000 -5.30500000
+          3.07700000 -2.88700000 -1.43200000
+          4.81900000 -2.88700000 -1.43200000
+          4.81900000 -2.88700000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="6"/>
+        <roomTo value="7"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          4.81900000 -6.62100000 -1.38000000
+          4.90400000 -2.94200000 -1.38000000
+          3.07700000 -2.94200000 -1.38000000
+          3.07700000 -6.62100000 -1.38000000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          4.90400000 -5.79200000 -0.40700000
+          4.90400000 -5.79200000 1.05000000
+          4.90400000 -8.18700000 1.05000000
+          4.90400000 -8.18700000 -0.40700000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          2.11100000 -8.79800100 -1.32800000
+          2.11100000 -8.79800100 1.05100000
+          0.65800000 -8.79800100 1.05100000
+          0.65800000 -8.79800100 -1.32800000
+        </corners>
+        <attachedObjects content="int_array">
+          8
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -0.90100000 -8.79800100 -0.41100000
+          -0.90100000 -8.79800100 1.05100000
+          -3.31300000 -8.79800100 1.05100000
+          -3.31300000 -8.79800100 -0.41100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -7.08800000 -8.79800100 -0.41100000
+          -7.08800000 -8.79800100 1.05100000
+          -8.16700000 -8.79800100 1.05100000
+          -8.16700000 -8.79800100 -0.41100000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -7.92400000 -2.94200000 0.05300000
+          -7.92400000 -2.94200000 1.46600000
+          -5.52200000 -2.94200000 1.46600000
+          -5.52200000 -2.94200000 0.05300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="7"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          -2.75900000 -2.94200000 0.05300000
+          -2.75900000 -2.94200000 1.46600000
+          -1.68600000 -2.94200000 1.46600000
+          -1.68600000 -2.94200000 0.05300000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="8"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          8.82400100 -4.05700000 -5.30500000
+          8.82400100 -4.05700000 -2.91500000
+          8.82400100 -5.50100000 -2.91500000
+          8.82400100 -5.50100000 -5.30500000
+        </corners>
+        <attachedObjects content="int_array">
+          9
+        </attachedObjects>
+      </Item>
+      <Item>
+        <roomFrom value="8"/>
+        <roomTo value="0"/>
+        <flags value="0"/>
+        <mirrorPriority value="0"/>
+        <opacity value="0"/>
+        <redm_loves_you_b5c65d165ac2a96a value="1.00000000"/>
+        <redm_loves_you_77f55279e5bd37e2 value="1.00000000"/>
+        <redm_loves_you_b35ecf068bc6b8e4 value="1.00000000"/>
+        <redm_loves_you_e8f083f1ebc039d7 value="1.00000000"/>
+        <audioOcclusion value="0"/>
+        <corners content="vector3_array">
+          8.82400100 -6.75700000 -4.36900000
+          8.82400100 -6.75700000 -2.91500000
+          8.82400100 -7.83500000 -2.91500000
+          8.82400100 -7.83500000 -4.36900000
+        </corners>
+        <attachedObjects content="int_array">
+        </attachedObjects>
+      </Item>
+	  </portals>
+	  <entitySets/>
+	  <timeCycleModifiers/>
+	  <redm_loves_you_a1eeea498c70af98/>
+      <redm_loves_you_4f772a6e01dcf2fd/>
+      <redm_loves_you_19e1250a833f3e04>
+        <redm_loves_you_4b0e6c8bf963c46b>
+          <centerAndRadius x="0.00000000" y="0.00000000" z="0.00000000" w="0.00000000"/>
+        </redm_loves_you_4b0e6c8bf963c46b>
+        <flags/>
+      </redm_loves_you_19e1250a833f3e04>
+      <redm_loves_you_525e3103a5fdd7ca value="false"/>
+    </Item>	
+ </archetypes>
+ <name>mlo_medical_ytyp</name>
+ <dependencies />
+ <compositeEntityTypes itemType="CCompositeEntityType" />
+</CMapTypes>
