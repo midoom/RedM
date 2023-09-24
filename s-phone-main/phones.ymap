@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<CMapData>
+	<flags value="2"/>
+	<contentFlags value="65"/>
+	<streamingExtentsMin x="-1270.466370" y="-1794.916382" z="-357.215431"/>
+	<streamingExtentsMax x="3139.607178" y="1026.657654" z="513.211945"/>
+	<entitiesExtentsMin x="-870.466370" y="-1394.916382" z="42.784569"/>
+	<entitiesExtentsMax x="2739.607178" y="626.657654" z="113.211945"/>
+	<streamingExtentsMin x="-1156.842834" y="-1708.843750" z="-356.937580"/>
+	<streamingExtentsMax x="2893.087646" y="1203.383362" z="518.365936"/>
+	<entitiesExtentsMin x="-756.842834" y="-1308.843750" z="43.062420"/>
+	<entitiesExtentsMax x="2493.087646" y="803.383362" z="118.365936"/>
+	<entities>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2739.607178" y="-1394.916382" z="45.491863"/>
+			<rotation w="0.977552" x="0.000000" y="-0.000000" z="-0.210695"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-187.278580" y="626.657654" z="113.211945"/>
+			<rotation w="0.962994" x="-0.000000" y="0.000000" z="0.269521"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-870.466370" y="-1327.979248" z="42.784569"/>
+			<rotation w="0.013329" x="-0.000000" y="0.000000" z="0.999911"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="2493.087646" y="-1308.843750" z="48.185112"/>
+			<rotation w="0.999993" x="0.000000" y="-0.000000" z="-0.003809"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-756.842834" y="-1265.979736" z="43.062420"/>
+			<rotation w="0.005847" x="-0.000000" y="0.000000" z="0.999983"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+		<Item type="CEntityDef">
+			<archetypeName>s_phonewall01x</archetypeName>
+			<flags value="1572897"/>
+			<position x="-273.750214" y="803.383362" z="118.365936"/>
+			<rotation w="0.110831" x="-0.000000" y="0.000000" z="0.993839"/>
+			<scaleXY value="1"/>
+			<scaleZ value="1"/>
+			<parentIndex value="-1"/>
+			<lodDist value="500"/>
+			<childLodDist value="500"/>
+			<lodLevel>LODTYPES_DEPTH_HD</lodLevel>
+			<numChildren value="0"/>
+			<ambientOcclusionMultiplier value="255"/>
+			<artificialAmbientOcclusion value="255"/>
+		</Item>
+	</entities>
+</CMapData>
+
+
+
