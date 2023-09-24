@@ -1,2 +1,2 @@
-# RedM
-FREE RedM Script Collection
+# RedM VORP #
+FREE RedM Script Collection for VORP
